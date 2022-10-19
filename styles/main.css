@@ -307,8 +307,8 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transform: translateY(-200%);
-          transform: translateY(-200%);
+  -webkit-transform: translateY(-20%);
+          transform: translateY(-20%);
   -webkit-transition: -webkit-transform 1s ease-in-out;
   transition: -webkit-transform 1s ease-in-out;
   transition: transform 1s ease-in-out;
