@@ -307,8 +307,8 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transform: translateY(-20%);
-          transform: translateY(-20%);
+  -webkit-transform: translateY(-200%);
+          transform: translateY(-200%);
   -webkit-transition: -webkit-transform 1s ease-in-out;
   transition: -webkit-transform 1s ease-in-out;
   transition: transform 1s ease-in-out;
@@ -316,7 +316,7 @@ nav {
 }
 
 nav .logo-wrapper {
-  margin-top: 5.3125em;
+  margin-top: 4em;
 }
 
 nav ul {
@@ -350,10 +350,8 @@ nav ul li {
           align-items: center;
   width: 240px;
   height: 41.67px;
-  -webkit-box-shadow: 2px 2px 0px #0b0b0b,
- -2px -2px 0px #131313;
-          box-shadow: 2px 2px 0px #0b0b0b,
- -2px -2px 0px #131313;
+  -webkit-box-shadow: 2px 2px 0px #0b0b0b, -2px -2px 0px #131313;
+          box-shadow: 2px 2px 0px #0b0b0b, -2px -2px 0px #131313;
   border-radius: 5px;
 }
 
@@ -372,7 +370,7 @@ nav ul li a:hover {
 }
 
 nav .closebtn {
-  margin-bottom: 1.875em;
+  margin-bottom: 4em;
   cursor: pointer;
 }
 
@@ -449,10 +447,8 @@ nav .closebtn {
       -ms-flex-align: center;
           align-items: center;
   background-color: #171717;
-  -webkit-box-shadow: 5px 5px 4px #0f0f0f,
- -5px -5px 4px #1f1f1f;
-          box-shadow: 5px 5px 4px #0f0f0f,
- -5px -5px 4px #1f1f1f;
+  -webkit-box-shadow: 5px 5px 4px #0f0f0f, -5px -5px 4px #1f1f1f;
+          box-shadow: 5px 5px 4px #0f0f0f, -5px -5px 4px #1f1f1f;
 }
 
 .hero .photo-container .homephoto {
@@ -614,20 +610,15 @@ nav .closebtn {
 
 .about .about-container {
   margin-top: 3em;
+  margin-left: 2em;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 195px;
   height: 308px;
   background: #131313;
   border: 4px solid #131313;
-  -webkit-box-shadow: 2px 2px 2px #080808,
- -2px -2px 2px #1e1e1e,
- inset 1px 1px 1px #080808,
- inset -1px -1px 1px #1e1e1e;
-          box-shadow: 2px 2px 2px #080808,
- -2px -2px 2px #1e1e1e,
- inset 1px 1px 1px #080808,
- inset -1px -1px 1px #1e1e1e;
+  -webkit-box-shadow: 2px 2px 2px #080808, -2px -2px 2px #1e1e1e, inset 1px 1px 1px #080808, inset -1px -1px 1px #1e1e1e;
+          box-shadow: 2px 2px 2px #080808, -2px -2px 2px #1e1e1e, inset 1px 1px 1px #080808, inset -1px -1px 1px #1e1e1e;
   border-radius: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -650,15 +641,13 @@ nav .closebtn {
 .about p {
   font-family: 'Poppins';
   font-weight: 400;
-  font-size: 1rem;
+  font-size: .99rem;
   line-height: 150%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-shadow: inset 5px 5px 5px #0f0f0f,
- inset -3px -3px 5px #1f1f1f;
-          box-shadow: inset 5px 5px 5px #0f0f0f,
- inset -3px -3px 5px #1f1f1f;
+  -webkit-box-shadow: inset 5px 5px 5px #0f0f0f, inset -3px -3px 5px #1f1f1f;
+          box-shadow: inset 5px 5px 5px #0f0f0f, inset -3px -3px 5px #1f1f1f;
   padding: 1em 1em;
   border-radius: 5px;
   -webkit-box-align: center;
@@ -705,14 +694,8 @@ nav .closebtn {
   height: 593px;
   background: #171717;
   border: 4px solid #171717;
-  -webkit-box-shadow: 4px 4px 4px #0b0b0b,
- -4px -4px 4px #131313,
- inset 2px 2px 2px #0b0b0b,
- inset -2px -2px 2px #131313;
-          box-shadow: 4px 4px 4px #0b0b0b,
- -4px -4px 4px #131313,
- inset 2px 2px 2px #0b0b0b,
- inset -2px -2px 2px #131313;
+  -webkit-box-shadow: 4px 4px 4px #0b0b0b, -4px -4px 4px #131313, inset 2px 2px 2px #0b0b0b, inset -2px -2px 2px #131313;
+          box-shadow: 4px 4px 4px #0b0b0b, -4px -4px 4px #131313, inset 2px 2px 2px #0b0b0b, inset -2px -2px 2px #131313;
   border-radius: 15px;
   margin-top: 5em;
   margin-right: 1em;
@@ -991,10 +974,8 @@ nav .closebtn {
           align-items: center;
   background: #171717;
   border: 1px solid #171717;
-  -webkit-box-shadow: 2px 2px 2px #080808,
- -2px -2px 2px #1e1e1e;
-          box-shadow: 2px 2px 2px #080808,
- -2px -2px 2px #1e1e1e;
+  -webkit-box-shadow: 2px 2px 2px #080808, -2px -2px 2px #1e1e1e;
+          box-shadow: 2px 2px 2px #080808, -2px -2px 2px #1e1e1e;
   border-radius: 10px;
   padding: 1em 1.25em;
   cursor: pointer;
@@ -1117,14 +1098,8 @@ nav .closebtn {
   margin-top: 1em;
   background: transparent;
   border: 4px solid #131313;
-  -webkit-box-shadow: 2px 2px 1px #080808,
- -2px -2px 1px #1e1e1e,
- inset 2px 2px 2px #080808,
- inset -2px -2px 2px #1e1e1e;
-          box-shadow: 2px 2px 1px #080808,
- -2px -2px 1px #1e1e1e,
- inset 2px 2px 2px #080808,
- inset -2px -2px 2px #1e1e1e;
+  -webkit-box-shadow: 2px 2px 1px #080808, -2px -2px 1px #1e1e1e, inset 2px 2px 2px #080808, inset -2px -2px 2px #1e1e1e;
+          box-shadow: 2px 2px 1px #080808, -2px -2px 1px #1e1e1e, inset 2px 2px 2px #080808, inset -2px -2px 2px #1e1e1e;
   border-radius: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1145,14 +1120,8 @@ nav .closebtn {
 .contact .message-box input {
   background: transparent;
   border: 1px solid #131313;
-  -webkit-box-shadow: 2px 2px 2px #080808,
- -2px -2px 2px #1e1e1e,
- inset 1px 1px 1px #080808,
- inset -1px -1px 1px #1e1e1e;
-          box-shadow: 2px 2px 2px #080808,
- -2px -2px 2px #1e1e1e,
- inset 1px 1px 1px #080808,
- inset -1px -1px 1px #1e1e1e;
+  -webkit-box-shadow: 2px 2px 2px #080808, -2px -2px 2px #1e1e1e, inset 1px 1px 1px #080808, inset -1px -1px 1px #1e1e1e;
+          box-shadow: 2px 2px 2px #080808, -2px -2px 2px #1e1e1e, inset 1px 1px 1px #080808, inset -1px -1px 1px #1e1e1e;
   font-family: "Poppins";
   font-weight: 400;
   font-size: .85rem;
@@ -1168,14 +1137,9 @@ nav .closebtn {
 .contact .message-box textarea {
   background: transparent;
   border: 1px solid #131313;
-  -webkit-box-shadow: 2px 2px 2px #080808,
- -2px -2px 2px #1e1e1e,
- inset 1px 1px 1px #080808,
- inset -1px -1px 1px #1e1e1e;
-          box-shadow: 2px 2px 2px #080808,
- -2px -2px 2px #1e1e1e,
- inset 1px 1px 1px #080808,
- inset -1px -1px 1px #1e1e1e;
+  resize: none;
+  -webkit-box-shadow: 2px 2px 2px #080808, -2px -2px 2px #1e1e1e, inset 1px 1px 1px #080808, inset -1px -1px 1px #1e1e1e;
+          box-shadow: 2px 2px 2px #080808, -2px -2px 2px #1e1e1e, inset 1px 1px 1px #080808, inset -1px -1px 1px #1e1e1e;
   border-radius: 5px;
   font-family: "Poppins";
   color: white;
@@ -1194,10 +1158,8 @@ nav .closebtn {
   background: #131313;
   border-radius: 3px;
   border: 2px solid #131313;
-  -webkit-box-shadow: 2px 2px 2px #080808,
- -2px -2px 2px #1e1e1e;
-          box-shadow: 2px 2px 2px #080808,
- -2px -2px 2px #1e1e1e;
+  -webkit-box-shadow: 2px 2px 2px #080808, -2px -2px 2px #1e1e1e;
+          box-shadow: 2px 2px 2px #080808, -2px -2px 2px #1e1e1e;
   font-family: 'Poppins';
   letter-spacing: 1.1px;
   font-weight: 700;

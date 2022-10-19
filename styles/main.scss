@@ -116,7 +116,7 @@ nav{
     transform: translateY(-200%);
     transition: transform 1s ease-in-out;
     .logo-wrapper{
-        margin-top: 5.3125em;
+        margin-top: 4em;
     }
     ul{
         display: flex;
@@ -150,7 +150,7 @@ nav{
         }
     }
     .closebtn{
-        margin-bottom: 1.875em;
+        margin-bottom: 4em;
         cursor: pointer
     }
 }
@@ -314,6 +314,7 @@ nav{
     }
     .about-container{
         margin-top: 3em;
+        margin-left: 2em;
         box-sizing: border-box;
         width: 195px;
         height: 308px;
@@ -337,7 +338,7 @@ nav{
     p{
         font-family: 'Poppins';
         font-weight: 400;
-        font-size: 1rem;
+        font-size: .99rem;
         line-height: 150%;
         display: flex;
         box-shadow: inset 5px 5px 5px #0f0f0f,
@@ -682,6 +683,7 @@ nav{
         textarea{
             background: transparent;
             border: 1px solid $sec-bg;
+            resize: none;
             box-shadow:  2px 2px 2px #080808,
                         -2px -2px 2px #1e1e1e,
                         inset 1px 1px 1px #080808,
