@@ -7,7 +7,7 @@
     <title>Aravind Ashokan</title>
     <link rel="stylesheet" href="styles/main.css">
     <link rel="icon" href="assets/logo.svg" type="image/x-icon">
-    <script defer src="https://smtpjs.com/v3/smtp.js"></script>
+    <script defer type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script defer src="./scripts/app.js"></script>
 
 </head>
@@ -50,7 +50,7 @@
             
         <h1 class="hi">Hi, I'm <span>Aravind Ashokan.</span></h1>
         <div class="photo-container">
-            <img src="./assets/homephoto.png" alt="photo" class="homephoto">
+            <img src="./assets/homephoto.jpeg" alt="photo" class="homephoto">
         </div>
         <div class="subtext">
             <h1 class="iam">I'm a <span class="typing">Web Developer</span></h1>
@@ -61,8 +61,8 @@
         </div>
 
         <div class="buttons">
-            <a href="" class="hire">Hire Me</a>
-            <a href="" class="resume">My Resume</a>
+            <a href="#contact" class="hire">Hire Me</a>
+            <a target="_blank" href="https://drive.google.com/file/d/1KU7Hj9uzVNUJGKhmWpzCn7ki9PbxmudQ/view?usp=sharing" class="resume">My Resume</a>
         </div>
         <div class="scroll">
             <svg width="39" height="16" viewBox="0 0 39 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -104,35 +104,26 @@
                         <div class="dot"></div>
                         <div class="dot"></div>
                         <div class="dot"></div>
-                        <div class="dot"></div>
                         <div class="dot closedot"></div>
                     </div>
                 </div>
                 <div class="ed-content">
                     <ul>
-                        <li><span>2020: Class X</span></li>
+                        <li><span>2019-2020: Class X</span></li>
                         <li><b>PARAMA BHATTARA KENDRIYA VIDYALAYAM</b></li> 
                         <li>Percentage: 95.6%</li>
-                        <li>Full A+</li>
+                        <li>Total Mark: 478/500</li>
                     </ul>    
                     <ul>
-                        <li><span>2020: Class X</span></li>
+                        <li><span>2021-2022: Class XII</span></li>
                         <li><b>PARAMA BHATTARA KENDRIYA VIDYALAYAM</b></li> 
-                        <li>Percentage: 95.6%</li>
-                        <li>Full A+</li>
+                        <li>Percentage: 96.4%</li>
+                        <li>Total Mark: 482/500</li>
                     </ul>     
                     <ul>
-                        <li><span>2020: Class X</span></li>
-                        <li><b>PARAMA BHATTARA KENDRIYA VIDYALAYAM</b></li> 
-                        <li>Percentage: 95.6%</li>
-                        <li>Full A+</li>
-                    </ul>      
-                    <ul>
-                        <li><span>2020: Class X</span></li>
-                        <li><b>PARAMA BHATTARA KENDRIYA VIDYALAYAM</b></li> 
-                        <li>Percentage: 95.6%</li>
-                        <li>Full A+</li>
-                    </ul>  
+                        <li><span>2022-current: B.Tech In C.S.E</span></li>
+                        <li><b>MODEL ENGINEERING COLLEGE</b></li> 
+                    </ul>
                 </div>
    
             </div>
@@ -152,35 +143,25 @@
                         <div class="dot"></div>
                         <div class="dot"></div>
                         <div class="dot"></div>
-                        <div class="dot"></div>
                         <div class="dot closedot"></div>
                     </div>
                 </div>
                 <div class="ed-content">
                     <ul>
-                        <li><span>2020: Class X</span></li>
-                        <li><b>PARAMA BHATTARA KENDRIYA VIDYALAYAM</b></li> 
-                        <li>Percentage: 95.6%</li>
-                        <li>Full A+</li>
+                        <li><span>Experience 1</span></li>
+                        <li><b>Place of Work</b></li> 
+                        <li>Details</li>
                     </ul>    
                     <ul>
-                        <li><span>2020: Class X</span></li>
-                        <li><b>PARAMA BHATTARA KENDRIYA VIDYALAYAM</b></li> 
-                        <li>Percentage: 95.6%</li>
-                        <li>Full A+</li>
+                        <li><span>Experience 2</span></li>
+                        <li><b>Place of Work</b></li> 
+                        <li>Details</li>
                     </ul>     
                     <ul>
-                        <li><span>2020: Class X</span></li>
-                        <li><b>PARAMA BHATTARA KENDRIYA VIDYALAYAM</b></li> 
-                        <li>Percentage: 95.6%</li>
-                        <li>Full A+</li>
+                        <li><span>Experience 3</span></li>
+                        <li><b>Place of Work</b></li> 
+                        <li>Details</li>
                     </ul>      
-                    <ul>
-                        <li><span>2020: Class X</span></li>
-                        <li><b>PARAMA BHATTARA KENDRIYA VIDYALAYAM</b></li> 
-                        <li>Percentage: 95.6%</li>
-                        <li>Full A+</li>
-                    </ul>  
                 </div>
    
             </div>
@@ -248,7 +229,7 @@
         <h1 class="subtitle">My Projects</h1> 
         <h1 class="smw">See My Work</h1>           
         <div class="card-container">
-            <a class="card" target=”_blank” href="https://github.com/code-lover636/NEWSIFY-NewsApp-API_Based">
+            <a class="card" target="_blank" href="https://github.com/code-lover636/NEWSIFY-NewsApp-API_Based">
                 <img src="./assets/newsify.png" alt="nwesify">
                 <h1 class="heading">NEWSIFY</h1>
                 <ul>
@@ -316,11 +297,12 @@
     <section class="contact" id="contact">
         <div class="social">
             <ul>
-                <li><button onclick="copyEmail();">
+                <li>
+                    <a href="mailto:aravindashokan636@gmail.com">
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M9.65411 3.98202C11.1809 3.98202 12.6196 4.65887 13.674 5.71696V5.72009C13.674 5.21198 14.0158 4.82761 14.4883 4.82761H14.6083C15.3539 4.82761 15.5033 5.53072 15.5033 5.75258L15.5064 13.6492C15.4546 14.1667 16.0408 14.4342 16.3664 14.1017C17.632 12.7999 19.1488 7.40253 15.5783 4.27763C12.2484 1.36085 7.77917 1.84271 5.403 3.48016C2.87745 5.2251 1.26313 9.07935 2.8312 12.7017C4.54365 16.651 9.43912 17.8291 12.3528 16.6541C13.8277 16.0585 14.5077 18.0497 12.9746 18.7015C10.6641 19.6871 4.22491 19.5865 1.2175 14.3786C-0.814305 10.8605 -0.706809 4.67199 4.68427 1.46585C8.80476 -0.98845 14.2415 -0.308471 17.5189 3.11329C20.9438 6.69381 20.7456 13.393 17.402 15.9973C15.8877 17.1816 13.639 16.0298 13.6552 14.3042L13.6384 13.7417C12.584 14.786 11.1809 15.3985 9.65411 15.3985C6.63358 15.3985 3.97429 12.7386 3.97429 9.72121C3.97429 6.67131 6.63358 3.98327 9.65411 3.98327V3.98202ZM13.4534 9.50309C13.339 7.29254 11.6984 5.96133 9.71598 5.96133H9.64099C7.35606 5.96133 6.08672 7.76127 6.08672 9.80183C6.08672 12.0899 7.6198 13.5348 9.63161 13.5348C11.8772 13.5348 13.3515 11.8918 13.459 9.94808L13.4534 9.50309Z" fill="white"/>
                         </svg>
-                    </button>
+                    </a>
                 </li>
                 <li><a target="_blank" href="https://github.com/code-lover636">
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -337,7 +319,7 @@
                         
                     </a>
                 </li>
-                <li><a target="_blank" href="">
+                <li><a target="_blank" href="https://www.linkedin.com/in/aravind-ashokan-a26549243/">
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M3.91925 0C1.76397 0 0 1.76393 0 3.91925V16.0814C0 18.2367 1.76393 20 3.91925 20H16.0814C18.2367 20 20 18.2367 20 16.0814V3.91925C20 1.76397 18.2367 0 16.0814 0H3.91925ZM4.905 3.3004C5.93842 3.3004 6.57495 3.97882 6.5946 4.87059C6.5946 5.74267 5.93838 6.44015 4.88502 6.44015H4.86563C3.85188 6.44015 3.19666 5.74271 3.19666 4.87059C3.19666 3.97884 3.87171 3.3004 4.90498 3.3004H4.905ZM13.8105 7.46842C15.7979 7.46842 17.2878 8.76743 17.2878 11.5589V16.7702H14.2674V11.9083C14.2674 10.6866 13.8303 9.85307 12.7372 9.85307C11.9028 9.85307 11.4054 10.4149 11.187 10.9576C11.1073 11.1518 11.0877 11.4229 11.0877 11.6946V16.7702H8.06729C8.06729 16.7702 8.10692 8.53433 8.06729 7.68156H11.0883V8.9686C11.4897 8.34933 12.2076 7.4684 13.8105 7.4684V7.46842ZM3.37481 7.68222H6.3952V16.7702H3.37481V7.68222Z" fill="white"/>
                         </svg>
@@ -351,7 +333,7 @@
                         
                     </a>
                 </li>
-                <li><a target="_blank" href="">
+                <li><a target="_blank" href="https://www.facebook.com/">
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M20 10C20 4.47563 15.5206 0 10 0C4.47563 0 0 4.47563 0 10C0 14.99 3.65562 19.1275 8.4375 19.8769V12.8912H5.89813V10.0006H8.4375V7.79625C8.4375 5.29063 9.92813 3.90687 12.2131 3.90687C13.3075 3.90687 14.4531 4.10188 14.4531 4.10188V6.5625H13.19C11.95 6.5625 11.5625 7.33437 11.5625 8.125V10H14.3356L13.89 12.8906H11.5625V19.8762C16.3406 19.1269 20 14.9894 20 9.99937V10Z" fill="white"/>
                         </svg>
@@ -364,7 +346,7 @@
                         </svg>
                     </a>
                 </li>
-                <li><a target="_blank" href="">
+                <li><a target="_blank" href="https://www.instagram.com/_aravind_636/">
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M13.2 10C13.2 10.6329 13.0123 11.2516 12.6607 11.7778C12.3091 12.3041 11.8093 12.7142 11.2246 12.9564C10.6399 13.1986 9.99645 13.262 9.37571 13.1385C8.75497 13.015 8.18479 12.7103 7.73726 12.2627C7.28973 11.8152 6.98496 11.245 6.86149 10.6243C6.73801 10.0036 6.80138 9.36014 7.04359 8.77541C7.28579 8.19069 7.69594 7.69092 8.22218 7.3393C8.74841 6.98768 9.3671 6.8 10 6.8C10.8479 6.80264 11.6603 7.14063 12.2598 7.74017C12.8594 8.33972 13.1974 9.15212 13.2 10ZM20 5.6V14.4C20 15.8852 19.41 17.3096 18.3598 18.3598C17.3096 19.41 15.8852 20 14.4 20H5.6C4.11479 20 2.69041 19.41 1.6402 18.3598C0.589998 17.3096 0 15.8852 0 14.4V5.6C0 4.11479 0.589998 2.69041 1.6402 1.6402C2.69041 0.589998 4.11479 0 5.6 0H14.4C15.8852 0 17.3096 0.589998 18.3598 1.6402C19.41 2.69041 20 4.11479 20 5.6ZM14.8 10C14.8 9.05065 14.5185 8.12262 13.9911 7.33326C13.4636 6.54391 12.714 5.92868 11.8369 5.56538C10.9598 5.20208 9.99468 5.10702 9.06357 5.29223C8.13246 5.47744 7.27718 5.9346 6.60589 6.60589C5.9346 7.27718 5.47744 8.13246 5.29223 9.06357C5.10702 9.99468 5.20208 10.9598 5.56538 11.8369C5.92868 12.714 6.54391 13.4636 7.33326 13.9911C8.12262 14.5185 9.05065 14.8 10 14.8C11.273 14.8 12.4939 14.2943 13.3941 13.3941C14.2943 12.4939 14.8 11.273 14.8 10ZM16.4 4.8C16.4 4.56266 16.3296 4.33066 16.1978 4.13332C16.0659 3.93598 15.8785 3.78217 15.6592 3.69134C15.4399 3.60052 15.1987 3.57676 14.9659 3.62306C14.7331 3.66936 14.5193 3.78365 14.3515 3.95147C14.1836 4.11929 14.0694 4.33311 14.0231 4.56589C13.9768 4.79867 14.0005 5.03995 14.0913 5.25922C14.1822 5.47849 14.336 5.66591 14.5333 5.79776C14.7307 5.92962 14.9627 6 15.2 6C15.5183 6 15.8235 5.87357 16.0485 5.64853C16.2736 5.42348 16.4 5.11826 16.4 4.8Z" fill="white"/>
                         </svg>
@@ -442,6 +424,7 @@
             </g>
         </svg>   
     </section>
+
 
 </body>
 </html>

@@ -47,9 +47,7 @@ let current = '';
 let letter = '';
 
 (function type(){
-    if(count === texts.length){
-        count = 0;
-    }
+    if(count === texts.length){ count = 0; }
     current = texts[count];
     letter = current.slice(0,++index);
     document.querySelector('.typing').textContent = letter;
@@ -61,30 +59,22 @@ let letter = '';
 }());
 
 // Message system
+(function() { emailjs.init('bXY7HtbmJcff0T-XE')})();
 
-const form = document.querySelector('.message-box')
+var form = document.querySelector(".message-box");
 function sendMsg(e){
     e.preventDefault();
-    const name = document.querySelector('.name')
-          email = document.querySelector('.email')
-          msg = document.querySelector('.message')
-    Email.send({
-        SecureToken : "29e4899f-758e-4d83-abce-c06263e7083f",
-        From : email.value,
-        To: "aravindashokan636@gmail.com",
-        Subject : "Feedback from website",
-        Body : "Name: "+name.value+"<br>Email: "+email.value+"<br>Message: "+msg.value,
-    }).then(
-        message => alert(message)
-    );
+    var tempParams = {
+        from_name: document.querySelector('.name').value,
+        rec_email: document.querySelector('.email').value,
+        message: document.querySelector('.message').value
+    }; 
+    emailjs.send('service_mbsleos','template_tbkavid', tempParams)
+        .then(
+            function() { alert('Message Sent Successfully') },
+            function(error) {console.log('FAILED...', error); alert('Message Failed') }
+            );
     form.reset();
 }
 
 form.addEventListener('submit',sendMsg);
-
-// Email copy to clipboard
-function copyEmail(){
-    navigator.clipboard.writeText("aravindashokan636@gmail.com");
-    alert("Email ID copied to clipboard");
-    console.log("hello");
-}
