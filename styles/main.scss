@@ -1100,6 +1100,13 @@ nav{
             grid-template-columns: auto auto auto auto;
             .myskill{
                 margin-right: 7em;
+                .arc{
+                    width: 100px;
+                    height: 100px;
+                    img{
+                        width: 40px;
+                    }
+                }
             }
         }
     }

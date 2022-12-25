@@ -1214,6 +1214,13 @@ nav .closebtn {
   .skills .sk-container .myskill {
     margin-right: 7em;
   }
+  .skills .sk-container .myskill .arc {
+    width: 100px;
+    height: 100px;
+  }
+  .skills .sk-container .myskill .arc img {
+    width: 40px;
+  }
   .projects .smw, .projects .scroll {
     display: none;
   }
