@@ -7,11 +7,23 @@
     <title>Aravind Ashokan</title>
     <link rel="stylesheet" href="styles/main.css">
     <link rel="icon" href="assets/logo.svg" type="image/x-icon">
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
     <script defer type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script defer src="./scripts/app.js"></script>
+    <script defer src="./scripts/nav.js"></script>
+    <script defer src="./scripts/typeAnimation.js"></script>
+    <script defer src="./scripts/preloader.js"></script>
+    <script defer src="./scripts/mouse.js"></script>
+    <script defer src="./scripts/message.js"></script>
 
 </head>
 <body>
+    <main class="loader">
+        <h1 class="myname1">ARAVIND</h1>
+        <h1 class="myname2">ARAVIND</h1>
+        <div class="load"></div>
+    </main>
+
     <div id="circle">
         <div class="ball1"></div>
         <div class="ball2"></div>
@@ -50,12 +62,11 @@
             
         <h1 class="hi">Hi, I'm <span>Aravind Ashokan.</span></h1>
         <div class="photo-container">
-            <img src="./assets/homephoto.jpeg" alt="photo" class="homephoto">
         </div>
         <div class="subtext">
             <h1 class="iam">I'm a <span class="typing">Web Developer</span></h1>
-            <p class="desc">I am Aravind Ashokan and I am an 18 year old student and programmer.
-                Currently I am studying First year Computer Science and Engineering.
+            <p class="desc">I am Aravind Ashokan. I am a programmer and developer.
+                Currently I am studying First year Computer Science and Engineering at Govt. Model Engineering College(MEC).
                 This is my portfolio website. See around and know more about me!
             </p>          
         </div>
@@ -79,16 +90,15 @@
             <img src="./assets/aboutphoto.png" alt="My photo" class="aboutphoto">
         </div>    
         <p>
-            I am a computer science and engineering student. 
-            I am interested in web designing and development, GUI development and programming in general.
+            I am an ambitious and curious programmer. 
+            I am currently learning full-stack web development.
             I have also done many projects including GUI development, API based projects, 2D games, Web scrapping, and scripts.
-            I am a great learner and interested in trying out new things.
+            I am dedicated to staying up to date with the latest technologies and best practices in the field and am eager to continue learning and expanding my skills.
         </p>
         <ul class="details">
             <li><span>Name:</span>      &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp Aravind Ashokan</li>
-            <li><span>Age:</span>       &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp18</li>
-            <li><span>Email:</span>     &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp aravindashokan636@gmail.com</li>
             <li><span>Education:</span> &nbsp &nbsp First year C.S.E</li>
+            <li><span>Email:</span>     &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp aravindashokan636@gmail.com</li>
             <li><span>Github:</span>   &nbsp &nbsp &nbsp &nbsp &nbsp <a target="_blank" href="https://github.com/code-lover636">code-lover636</a></li>
         </ul>
         <h1 class="subtitle">Discover Me</h1>
@@ -109,19 +119,19 @@
                 </div>
                 <div class="ed-content">
                     <ul>
-                        <li><span>2019-2020: Class X</span></li>
+                        <li><span>2019-2020: <span class="class">Class X</span></span></li>
                         <li><b>PARAMA BHATTARA KENDRIYA VIDYALAYAM</b></li> 
                         <li>Percentage: 95.6%</li>
                         <li>Total Mark: 478/500</li>
                     </ul>    
                     <ul>
-                        <li><span>2021-2022: Class XII</span></li>
+                        <li><span>2021-2022: <span class="class">Class XII</span></span></li>
                         <li><b>PARAMA BHATTARA KENDRIYA VIDYALAYAM</b></li> 
                         <li>Percentage: 96.4%</li>
                         <li>Total Mark: 482/500</li>
                     </ul>     
                     <ul>
-                        <li><span>2022-current: B.Tech In C.S.E</span></li>
+                        <li><span>2022-current: <span class="class">B.Tech In C.S.E</span></span></li>
                         <li><b>MODEL ENGINEERING COLLEGE</b></li> 
                     </ul>
                 </div>
@@ -195,13 +205,31 @@
                 <div class="arc css">
                     <img src="./assets/css.png" alt="css" class="logo">
                 </div>
-                <small class="caption">CSS</small>
+                <small class="caption">SASS</small>
+            </div>
+            <div class="myskill">
+                <div class="arc bootstrap">
+                    <img src="./assets/bootstrap.png" alt="bootstrap" class="logo">
+                </div>
+                <small class="caption">Bootstrap</small>
             </div>
             <div class="myskill">
                 <div class="arc javascript">
                     <img src="./assets/js.png" alt="javascript" class="logo">
                 </div>
                 <small class="caption">JavaScript</small>
+            </div>
+            <div class="myskill">
+                <div class="arc react">
+                    <img src="./assets/react.png" alt="react" class="logo">
+                </div>
+                <small class="caption">React.js</small>
+            </div>
+            <div class="myskill">
+                <div class="arc flask">
+                    <img src="./assets/flask.png" alt="flask" class="logo">
+                </div>
+                <small class="caption">Flask</small>
             </div>
             <div class="myskill">
                 <div class="arc sql">
@@ -214,6 +242,18 @@
                     <img src="./assets/figma.png" alt="figma" class="logo">
                 </div>
                 <small class="caption">Figma</small>
+            </div>
+            <div class="myskill">
+                <div class="arc notion">
+                    <img src="./assets/notion.png" alt="notion" class="logo">
+                </div>
+                <small class="caption">Notion</small>
+            </div>
+            <div class="myskill">
+                <div class="arc netlify">
+                    <img src="./assets/netlify.png" alt="netlify" class="logo">
+                </div>
+                <small class="caption">Netlify</small>
             </div>
             <div class="myskill">
                 <div class="arc typing-speed">
@@ -233,7 +273,7 @@
                 <img src="./assets/newsify.png" alt="nwesify">
                 <h1 class="heading">NEWSIFY</h1>
                 <ul>
-                    <li>News App [WEB]</li>
+                    <li>News App [WEB-Flask]</li>
                     <li>News API Based Project</li>
                 </ul>
             </a>
@@ -241,16 +281,16 @@
                 <img src="./assets/tastes.png" alt="tastes">
                 <h1 class="heading">TASTES</h1>
                 <ul>
-                    <li>Food Recipe App [WEB]</li>
+                    <li>Food Recipe App [WEB-Flask]</li>
                     <li>Spoonacular API Based Project</li>
                 </ul>
             </a>
-            <a class="card cright" target=”_blank” href="https://github.com/code-lover636/CLOUDELIGHT-WeatherApp-API_Based">
-                <img src="./assets/cloud.png" alt="cloudelight">
-                <h1 class="heading">CLOUDELIGHT</h1>
+            <a class="card cright" target=”_blank” href="https://github.com/code-lover636/Musical">
+                <img src="./assets/music.png" alt="musical">
+                <h1 class="heading">MUSICAL</h1>
                 <ul>
-                    <li>Weather App [WEB]</li>
-                    <li>Openweathermap API Based Project</li>
+                    <li>Spotify Clone [WEB-React.js]</li>
+                    <li>Shazamcore API Based Project</li>
                 </ul>
             </a>
             <a class="card cleft" target=”_blank” href="https://github.com/code-lover636/Library-Management-System">
@@ -265,7 +305,7 @@
                 <img src="./assets/movie.png" alt="movie">
                 <h1 class="heading">Movie recommender</h1>
                 <ul>
-                    <li>Web Scrapping Project [HTML EMAIL]</li>
+                    <li>Web Scrapping Project[HTML, EMAIL]</li>
                     <li>Built With Beautifulsoup, Email & SMTP</li>
                 </ul>
             </a>
@@ -356,9 +396,10 @@
             </ul>
         </div>
         <form method="POST" class="message-box">
-            <input type="name" class="name" placeholder="Name">
-            <input type="email" class="email" placeholder="Email">
-            <textarea name="message" id="" cols="30" rows="10" placeholder="Message" class="message"></textarea>
+                <input type="name" name="name" class="name" placeholder="Name" required>
+                <input type="email" class="email" name="email" placeholder="Email ID" required>
+                <textarea name="message" id="" cols="30" rows="10" class="message" placeholder="Message" required></textarea>
+
             <button class="submit" type="submit">SEND</button>
         </form>
         <svg class="messaging-svg" width="262" height="250" viewBox="0 0 262 250" fill="none" xmlns="http://www.w3.org/2000/svg">
