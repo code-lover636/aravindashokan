@@ -11,6 +11,10 @@
   display: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: #171717;
   overflow: hidden;
@@ -35,13 +39,8 @@ body section a {
   text-decoration: none;
 }
 
-@-webkit-keyframes blink {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+.circle {
+  opacity: 0;
 }
 
 @keyframes blink {
@@ -50,18 +49,6 @@ body section a {
   }
   to {
     opacity: 1;
-  }
-}
-@-webkit-keyframes updown {
-  0% {
-    bottom: 5em;
-    color: #DA0037;
-  }
-  50% {
-    bottom: 8em;
-  }
-  100% {
-    bottom: 5em;
   }
 }
 @keyframes updown {
@@ -76,17 +63,6 @@ body section a {
     bottom: 5em;
   }
 }
-@-webkit-keyframes leftright {
-  0% {
-    transform: translateX(-2em);
-  }
-  50% {
-    transform: translateX(0em);
-  }
-  100% {
-    transform: translateX(-2em);
-  }
-}
 @keyframes leftright {
   0% {
     transform: translateX(-2em);
@@ -96,17 +72,6 @@ body section a {
   }
   100% {
     transform: translateX(-2em);
-  }
-}
-@-webkit-keyframes handmove {
-  0% {
-    transform: rotate(0deg);
-  }
-  50% {
-    transform: rotate(5deg);
-  }
-  100% {
-    transform: rotate(0deg);
   }
 }
 @keyframes handmove {
@@ -120,46 +85,12 @@ body section a {
     transform: rotate(0deg);
   }
 }
-@-webkit-keyframes msg1 {
-  0% {
-    opacity: 0;
-  }
-  20% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 1;
-  }
-  75% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 @keyframes msg1 {
   0% {
     opacity: 0;
   }
   20% {
     opacity: 1;
-  }
-  50% {
-    opacity: 1;
-  }
-  75% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@-webkit-keyframes msg2 {
-  0% {
-    opacity: 0;
-  }
-  25% {
-    opacity: 0;
   }
   50% {
     opacity: 1;
@@ -188,23 +119,6 @@ body section a {
     opacity: 1;
   }
 }
-@-webkit-keyframes msg3 {
-  0% {
-    opacity: 0;
-  }
-  25% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0;
-  }
-  75% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 @keyframes msg3 {
   0% {
     opacity: 0;
@@ -217,23 +131,6 @@ body section a {
   }
   75% {
     opacity: 1;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@-webkit-keyframes msg4 {
-  0% {
-    opacity: 0;
-  }
-  25% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0;
-  }
-  75% {
-    opacity: 0;
   }
   100% {
     opacity: 1;
@@ -256,7 +153,7 @@ body section a {
     opacity: 1;
   }
 }
-@-webkit-keyframes animate {
+@keyframes animate {
   0%, 100% {
     -webkit-clip-path: polygon(0% 45%, 16% 44%, 33% 50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
             clip-path: polygon(0% 45%, 16% 44%, 33% 50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
@@ -266,14 +163,12 @@ body section a {
             clip-path: polygon(0% 60%, 15% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
   }
 }
-@keyframes animate {
+@keyframes cursorMove {
   0%, 100% {
-    -webkit-clip-path: polygon(0% 45%, 16% 44%, 33% 50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
-            clip-path: polygon(0% 45%, 16% 44%, 33% 50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
+    scale: 1;
   }
   50% {
-    -webkit-clip-path: polygon(0% 60%, 15% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
-            clip-path: polygon(0% 60%, 15% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
+    scale: 3;
   }
 }
 .loader {
@@ -306,8 +201,7 @@ body section a {
 }
 .loader .myname2 {
   color: #DA0037;
-  -webkit-animation: animate 4s ease-in-out infinite;
-          animation: animate 4s ease-in-out infinite;
+  animation: animate 4s ease-in-out infinite;
 }
 .loader .load {
   width: 0vw;
@@ -320,7 +214,7 @@ body section a {
 
 nav {
   background-color: #0F0F0F;
-  z-index: 5;
+  z-index: 15;
   position: fixed;
   width: 100vw;
   height: 100vh;
@@ -374,6 +268,7 @@ nav .closebtn {
   top: 1.875em;
   left: 1.875em;
   cursor: pointer;
+  z-index: 10;
 }
 
 .open-nav {
@@ -443,8 +338,7 @@ nav .closebtn {
   height: 100%;
   position: absolute;
   border-right: 2px solid #5C4529;
-  -webkit-animation: blink 1s infinite ease;
-          animation: blink 1s infinite ease;
+  animation: blink 1s infinite ease;
 }
 .hero .subtext .desc {
   padding-top: 1em;
@@ -483,7 +377,16 @@ nav .closebtn {
 .hero .buttons .hire:hover, .hero .buttons .resume:hover {
   background-color: black;
   color: #DA0037;
+  transition: padding 0.3s ease-in-out;
+}
+.hero .buttons .resume {
+  background-color: black;
+  color: #DA0037;
   padding: 0.5em 1.5em;
+}
+.hero .buttons .resume:hover {
+  background-color: #DA0037;
+  color: white;
   transition: padding 0.3s ease-in-out;
 }
 .hero .scroll {
@@ -494,8 +397,7 @@ nav .closebtn {
   right: 0;
   z-index: 1;
   transform: translateX(3.2em) rotate(90deg);
-  -webkit-animation: updown 3s ease-in-out infinite;
-          animation: updown 3s ease-in-out infinite;
+  animation: updown 3s ease-in-out infinite;
 }
 .hero .scroll small {
   padding-left: 1em;
@@ -629,8 +531,7 @@ nav .closebtn {
   justify-content: space-between;
   align-items: center;
   margin: 2em 4em;
-  -webkit-animation: leftright 1.8s ease-in-out infinite;
-          animation: leftright 1.8s ease-in-out infinite;
+  animation: leftright 1.8s ease-in-out infinite;
 }
 .edx .ed-container .r-scroll small, .edx .ed-container .l-scroll small, .edx .ex-container .r-scroll small, .edx .ex-container .l-scroll small {
   margin-left: 0em;
@@ -748,8 +649,7 @@ nav .closebtn {
   align-items: center;
 }
 .projects .scroll .scroll-svg {
-  -webkit-animation: leftright 2s ease-in-out infinite;
-          animation: leftright 2s ease-in-out infinite;
+  animation: leftright 2s ease-in-out infinite;
   margin-left: 4em;
 }
 .projects .scroll small {
@@ -757,8 +657,7 @@ nav .closebtn {
   text-transform: uppercase;
   font-weight: 700;
   margin-left: 1em;
-  -webkit-animation: leftright 2s ease-in-out infinite;
-          animation: leftright 2s ease-in-out infinite;
+  animation: leftright 2s ease-in-out infinite;
 }
 .projects .subtitle {
   position: absolute;
@@ -943,24 +842,19 @@ nav .closebtn {
 }
 .contact .messaging-svg #hand {
   transform-origin: center;
-  -webkit-animation: handmove 2s ease infinite;
-          animation: handmove 2s ease infinite;
+  animation: handmove 2s ease infinite;
 }
 .contact .messaging-svg #msg1 {
-  -webkit-animation: msg1 5s ease infinite;
-          animation: msg1 5s ease infinite;
+  animation: msg1 5s ease infinite;
 }
 .contact .messaging-svg #msg2 {
-  -webkit-animation: msg2 5s ease infinite;
-          animation: msg2 5s ease infinite;
+  animation: msg2 5s ease infinite;
 }
 .contact .messaging-svg #msg3 {
-  -webkit-animation: msg3 5s ease infinite;
-          animation: msg3 5s ease infinite;
+  animation: msg3 5s ease infinite;
 }
 .contact .messaging-svg #msg4 {
-  -webkit-animation: msg4 5s ease infinite;
-          animation: msg4 5s ease infinite;
+  animation: msg4 5s ease infinite;
 }
 
 @media only screen and (min-width: 900px) {
@@ -985,28 +879,17 @@ nav .closebtn {
   }
 }
 @media only screen and (min-width: 1250px) {
-  #circle {
+  .circle {
+    opacity: 1;
     position: absolute;
-    transform: translate(30%, 30%);
     border-radius: 50%;
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
     border: 2px solid #DA0037;
-    z-index: 20;
-  }
-  #circle .ball1, #circle .ball2 {
-    border-radius: 50%;
-    border: 2px solid #5C4529;
-    background-color: #5C4529;
-    width: 10px;
-    height: 10px;
-    margin: -1em 2em;
-    transform-origin: 0px 60px;
-    transition: transform 4s ease;
-  }
-  #circle .ball2 {
-    margin: 1.5em 2.5em;
-    transform-origin: 0px 35px;
+    opacity: 0.5s;
+    z-index: 100;
+    pointer-events: none;
+    transition: scale 0.3s ease-in-out;
   }
   nav {
     transform: translateY(0%);
@@ -1181,7 +1064,7 @@ nav .closebtn {
   }
   .edx .ed-container .excard, .edx .ex-container .excard {
     margin-left: 30px;
-    padding-right: 220px;
+    padding-right: 30px;
   }
   .edx .ed-container .edcard, .edx .ed-container .excard, .edx .ex-container .edcard, .edx .ex-container .excard {
     width: 370px;
@@ -1189,7 +1072,7 @@ nav .closebtn {
     margin-top: 4em;
   }
   .edx .ed-container .edcard .ed-content ul, .edx .ed-container .excard .ed-content ul, .edx .ex-container .edcard .ed-content ul, .edx .ex-container .excard .ed-content ul {
-    margin-bottom: 3.9em;
+    margin-bottom: 4.9em;
   }
   .edx .ed-container .edcard .ed-content ul li, .edx .ed-container .excard .ed-content ul li, .edx .ex-container .edcard .ed-content ul li, .edx .ex-container .excard .ed-content ul li {
     font-size: 0.8rem;
@@ -1311,5 +1194,126 @@ nav .closebtn {
   }
   .contact .messaging-svg {
     right: 4em;
+  }
+}
+@media only screen and (min-width: 1900px) {
+  nav {
+    width: 260px;
+  }
+  nav ul {
+    gap: 1em;
+  }
+  nav ul li {
+    width: 200px;
+  }
+  nav ul li a {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  section {
+    padding-left: 300px;
+  }
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .hero .hi {
+    font-size: 4rem;
+  }
+  .hero .hi span {
+    font-size: 6rem;
+  }
+  .hero .photo-container {
+    width: 500px;
+    height: 630px;
+  }
+  .hero .photo-container .homephoto {
+    width: 475px;
+    height: 600px;
+  }
+  .hero .subtext {
+    margin-top: 5em;
+  }
+  .hero .subtext .iam {
+    font-size: 2.5rem;
+  }
+  .hero .subtext .desc {
+    width: 820px;
+    line-height: 30px;
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+  .hero .buttons {
+    margin-top: 11em;
+  }
+  .hero .buttons .hire, .hero .buttons .resume {
+    font-size: 1.7rem;
+    font-weight: 500;
+    padding: 0.7em 1.5em;
+    border-radius: 6px;
+  }
+  .hero .scroll {
+    transform: translate(4em, -3rem) rotate(90deg);
+  }
+  .hero .scroll .scroll-svg {
+    width: 50px;
+    height: auto;
+  }
+  .hero .scroll small {
+    font-size: 1.5rem;
+  }
+  .about .about-container {
+    top: 120vh;
+    left: 400px;
+    width: 400px;
+    height: 580px;
+  }
+  .about p {
+    font-size: 1.5rem;
+    line-height: 40px;
+    width: 45%;
+  }
+  .about .details li {
+    font-size: 1.5rem;
+  }
+  .edx .ed-container .edcard, .edx .ed-container .excard, .edx .ex-container .edcard, .edx .ex-container .excard {
+    width: 600px;
+  }
+  .edx .ed-container .edcard .ed-content ul li, .edx .ed-container .edcard .ex-content ul li, .edx .ed-container .excard .ed-content ul li, .edx .ed-container .excard .ex-content ul li, .edx .ex-container .edcard .ed-content ul li, .edx .ex-container .edcard .ex-content ul li, .edx .ex-container .excard .ed-content ul li, .edx .ex-container .excard .ex-content ul li {
+    font-size: 1.5rem;
+  }
+  .edx .ed-container .edcard .timeline .line, .edx .ed-container .excard .timeline .line, .edx .ex-container .edcard .timeline .line, .edx .ex-container .excard .timeline .line {
+    height: 650px;
+  }
+  .edx .ed-container .subtitle, .edx .ex-container .subtitle {
+    top: 230vh;
+  }
+  .edx .ex-container .subtitle {
+    left: 1250px;
+  }
+  .contact .social {
+    left: 1050px;
+  }
+  .contact .social ul li a svg {
+    width: 37px;
+  }
+  .contact .message-box {
+    left: 400px;
+    width: 600px;
+    height: 600px;
+  }
+  .contact .message-box input {
+    font-size: 1.3rem;
+    height: 50px;
+    margin-bottom: 1.5em;
+  }
+  .contact .message-box textarea {
+    font-size: 1.3rem;
+  }
+  .contact .messaging-svg {
+    width: 550px;
+    top: 530vh;
+    right: 3em;
   }
 }/*# sourceMappingURL=main.css.map */

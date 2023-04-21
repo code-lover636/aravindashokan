@@ -1,23 +1,23 @@
-const circle = document.getElementById('circle');
-const onMouseMove = (e) =>{
-    circle.style.left = e.pageX + 'px';
-    circle.style.top = e.pageY + 'px';
+// Following the mouse arrow
+const circle = document.querySelector('.circle');
+const mouseFollow = (e) =>{
+    circle.style.left = (e.pageX - 25)+ 'px';
+    circle.style.top = (e.pageY -25) + 'px';
 }
-document.addEventListener('mousemove', onMouseMove);
+document.addEventListener('mousemove', mouseFollow);
 
-const body=document.querySelector('body');
-const ball1=document.querySelector('.ball1');
-const ball2=document.querySelector('.ball2');
-let Count = 0;
-body.addEventListener('click',function(){
-    if (Count === 0){
-        ball1.style.transform = "rotate(360deg)";
-        ball2.style.transform = "rotate(-360deg)";
-        Count = 1;
-    }
-    else{
-        ball1.style.transform = "rotate(0deg)";
-        ball2.style.transform = "rotate(0deg)";   
-        Count = 0;  
-    }
-});
+// Adding animation on click
+const addAnim = (e) =>{
+    circle.style.border = "10px solid white"
+    circle.style.opacity = "0.2"
+    circle.style.scale = "2"
+
+    console.log("click")
+    setTimeout(()=>{
+        circle.style.opacity = ".5"
+        circle.style.scale = "1"
+        circle.style.border = "2px solid #DA0037"
+    },300);
+}
+document.addEventListener('click', addAnim);
+

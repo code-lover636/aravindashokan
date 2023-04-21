@@ -21,6 +21,11 @@ $grey: #444444;
 ::-webkit-scrollbar {
     display: none;
 }
+html {
+    scroll-behavior: smooth;
+  }
+   
+
 body{
     background: $bg-black;
     overflow: hidden;
@@ -45,6 +50,9 @@ body{
     }
 }
 
+.circle{
+    opacity: 0;
+}
 // Animations
 @keyframes blink{
     from{opacity: 0;}
@@ -131,6 +139,14 @@ body{
 	}
 }
 
+@keyframes cursorMove {
+    0%,100%{
+        scale: 1;
+    }
+    50%{
+        scale: 3;
+    }
+}
 // Preloader
 .loader{
     width: 100vw;
@@ -176,7 +192,7 @@ body{
 // Navigation bar
 nav{
     background-color: $side-black;
-    z-index: 5;
+    z-index: 15;
     position: fixed;
     width: 100vw;
     height: 100vh;
@@ -232,6 +248,7 @@ nav{
     top: 1.875em;
     left: 1.875em;
     cursor: pointer;
+    z-index: 10;
 }
 .open-nav{
     transform: translateY(0%);
@@ -340,7 +357,16 @@ nav{
             &:hover{
                 background-color: black;
                 color: $red;
-                padding: .5em 1.5em;
+                transition: padding .3s ease-in-out;
+            }
+        }
+        .resume{
+            background-color: black;
+            color: $red;
+            padding: .5em 1.5em;
+            &:hover{
+                background-color: $red;
+                color: white;
                 transition: padding .3s ease-in-out;
             }
         }
@@ -866,28 +892,17 @@ nav{
 }
 
 @media only screen and (min-width: 1250px){
-    #circle{
+    .circle{
+        opacity: 1;
         position: absolute;
-        transform: translate(30%, 30%);
         border-radius: 50%;
-        width: 80px;
-        height: 80px;
+        width: 50px;
+        height: 50px;
         border: 2px solid $red;
-        z-index: 20;
-        .ball1, .ball2{
-            border-radius: 50%;
-            border: 2px solid $brown;
-            background-color: $brown;
-            width: 10px; 
-            height: 10px;
-            margin: -1em 2em;
-            transform-origin: 0px 60px;
-            transition: transform 4s ease;
-        }
-        .ball2{
-            margin: 1.5em 2.5em;
-            transform-origin: 0px 35px;
-        }
+        opacity: .5s;
+        z-index: 100;
+        pointer-events: none;
+        transition: scale .3s ease-in-out;
     }
     nav{
         transform: translateY(0%);
@@ -1061,7 +1076,7 @@ nav{
             }
             .excard{
                 margin-left: 30px;
-                padding-right: 220px;
+                padding-right: 30px;
             }
             .edcard, .excard{
                 width: 370px;
@@ -1069,7 +1084,7 @@ nav{
                 margin-top: 4em;
                 .ed-content{
                     ul{
-                        margin-bottom: 3.9em;
+                        margin-bottom: 4.9em;
                         li{
                             font-size: .8rem;
                             font-weight: 400;
@@ -1208,5 +1223,141 @@ nav{
     }
     .contact .messaging-svg{
         right: 4em;
+    }
+}
+
+@media only screen and (min-width: 1900px){
+    nav{
+        width: 260px;
+        ul{
+            gap: 1em;
+            li{
+                width: 200px;
+                a{
+                    font-size: 1.5rem;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+    section{
+        padding-left: 300px;
+    }
+    .hero{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .hi{
+            font-size: 4rem;
+            span{
+                font-size: 6rem;
+            }
+        }
+        .photo-container{
+            width: 500px;
+            height: 630px;
+            .homephoto{
+                width: 475px;
+                height: 600px;
+            }
+        }
+        .subtext{
+            margin-top: 5em;
+            .iam{
+                font-size: 2.5rem;
+            }
+            .desc{
+                width: 820px;
+                line-height: 30px;
+                font-size: 1.5rem;
+                font-weight: 400;
+            }
+        }
+        .buttons{
+            margin-top: 11em;
+            .hire,.resume{
+                font-size: 1.7rem;
+                font-weight: 500;
+                padding: .7em 1.5em;
+                border-radius: 6px;
+            }
+        }
+        .scroll{
+            transform: translate(4em,-3rem) rotate(90deg);
+            .scroll-svg{
+                width: 50px;
+                height: auto;
+            }
+            small{
+                font-size: 1.5rem;
+            }
+        }
+    }
+    .about{
+        .about-container{
+            top: 120vh;
+            left: 400px;
+            width: 400px;
+            height: 580px;
+        }
+        p{
+            font-size: 1.5rem;
+            line-height: 40px;
+            width: 45%;
+        }
+        .details{
+            li{
+                font-size: 1.5rem;
+            }
+        }
+    }
+    .edx{
+        .ed-container, .ex-container{
+            .edcard, .excard{
+                width: 600px;
+                .ed-content, .ex-content{
+                    ul li{
+                        font-size: 1.5rem;
+                    }
+                }
+                .timeline{
+                    .line{
+                        height: 650px;
+                    }
+                }
+            }
+            .subtitle{
+                top: 230vh;
+            }
+        }
+        .ex-container .subtitle{
+            left: 1250px;
+        }
+    }
+    .contact{
+        .social{
+            left:1050px;
+            ul li a svg{
+                width: 37px;
+            }
+        }
+        .message-box{
+            left: 400px;
+            width: 600px;
+            height: 600px;
+            input{
+                font-size: 1.3rem;
+                height: 50px;
+                margin-bottom: 1.5em;
+            }
+            textarea{
+                font-size: 1.3rem;
+            }
+        }
+        .messaging-svg{
+            width: 550px;
+            top: 530vh;
+            right: 3em;
+        }
     }
 }

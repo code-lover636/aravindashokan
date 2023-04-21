@@ -1,4 +1,4 @@
-const texts = [" Web Developer", " GUI Developer", " Python Developer", " Student"];
+const texts = [" Web Developer", " Web Designer", " Programmer", "GUI Developer"];
 let count = 0;
 let index = 0;
 let current = '';
