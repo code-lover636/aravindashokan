@@ -1,0 +1,103 @@
+@import "./global.scss";
+
+.menu{
+    position: fixed;
+    top: 1.875em;
+    left: 1.875em;
+    cursor: pointer;
+    z-index: 90;
+}
+.open-nav{
+    transform: translateY(0%);
+}
+
+nav{
+    background-color: $nav-bg;
+    z-index: 100;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2em;
+    transform: translateY(-200%);
+    transition: transform 1s ease-in-out;
+    .logo-wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        width: 100%;
+        padding: 0 5em;
+        list-style-type: none;
+        li{
+            background-color: $nav-bg;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            width: 100%;
+            padding: .6em;
+            box-shadow: $nav-li-sh;
+            border-radius: 5px;
+            cursor: pointer;
+            a{
+                text-decoration: none;
+                font-family: $primary-font;
+                width: 100%;
+                height: 100%;
+                font-weight: 400;
+                font-size: 1.3rem;
+                text-align: center;
+                color: $teal;
+            }
+            .selected{
+                color: $primary-color;
+            }
+            &:hover{
+                a{
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+    .closebtn{
+        cursor: pointer
+    }
+}
+
+
+
+@media only screen and (min-width: 1200px){
+    nav{
+        transform: translateY(0%);
+        width: 17.18em;
+        justify-content: center;
+        .logo-wrapper{
+            width: 100%;
+            .logo{
+                width: 200px;
+            }
+        }
+        ul {
+            li{
+                width: 170px;
+                height: 40px;
+                a{
+                    font-size: 1.1rem;
+                }
+            }
+        }
+        .closebtn{
+            display: none;
+        }
+    }
+}

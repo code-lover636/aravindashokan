@@ -1,0 +1,186 @@
+@import './global.scss';
+
+
+.exp{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: $primary-font; 
+    overflow-y: scroll; 
+    header{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        h2{
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: $half-white;
+            cursor: pointer;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: .5em;
+            &::after{
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 85%;
+                height: 2px;
+                background-color: $primary-color;
+                width: 0%;
+            }
+            &:hover{
+                &::after{
+                    width: 85%;
+                    animation: load .3s ease-in-out;
+                }
+            }
+            .icon{
+                width: 30px;
+                height: 30px;
+                path{
+                    fill: $half-white;
+                }
+            }
+        }
+        .active{
+            color: $primary-color;
+            .icon{
+                path{
+                    fill: $primary-color;
+                }
+            }
+            &::after{
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 85%;
+                height: 2px;
+                background-color: $primary-color;
+            }
+            &:hover {&::after{animation: none}}
+        }
+    }
+    .container{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: row-reverse;
+        gap: 1.5em;
+        .line{
+            height: 100%;
+            width: 2px;
+            background-color: $white;
+        }
+        .card{
+            color: $white;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: 1em;
+            .item{
+                position: relative;
+                animation: fadeIn .7s ease;
+                .dot{
+                    position: absolute;
+                    top: 0;
+                    left: calc( -2em - .955px);
+                    width: 15px;
+                    height: 15px;
+                    background-color: $primary-color;
+                    border-radius: 50%;
+                }
+                .details{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    transform: translateY(-5px);
+                    .row1{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        width: 100%;
+                        gap: 1em;
+                        .desig{
+                            font-size: 1.2rem;
+                            color: $primary-color;
+                            font-weight: 800;
+                        }
+                        .date{
+                            font-size: 1rem;
+                            color: $half-white;
+                            font-weight: 400;
+                        }
+                    }
+                    .company{
+                        font-size: 1rem;
+                        font-weight: 600;
+                        color: rgb(255,255,255,0.75);
+                    }
+                    .skills-needed{
+                        font-size: 1rem;
+                        color: rgb(255,255,255,0.75);
+                        font-weight: 400;
+                        width: 500px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes load {
+    from{
+        width: 0%;
+    }
+    to{
+        width: 85%;
+    }
+}
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .exp{
+        header{
+            h2{
+                font-size: 1.5rem;
+                font-weight: 600;
+            }
+        }
+    }
+}
+@media screen and (max-width:600px) {
+    .exp{
+        header{
+            h2{
+                font-size: 1.1rem;
+                font-weight: 700;
+                flex-direction: column;
+            }
+        }
+        .container{
+            padding: 0em 2em;
+            .card{
+                // background-color:blue;
+                .item .details .skills-needed{
+                    width: auto;
+                }
+            }
+        }
+    }
+}
