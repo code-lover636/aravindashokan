@@ -1,0 +1,102 @@
+@import './global.scss';
+
+.services{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 3em 1em;
+    .grp{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+        font-family: $primary-font;
+        .box{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 8em;
+            height: 8em;
+            background: rgba(80, 80, 80, 0.25);
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            transition: transform .5s ease-in-out;
+            &:hover{
+                transform: translateY(-1em);
+            }
+            svg{
+                width: 35px;
+                height: 35px;
+            }
+            h1{
+                font-weight: 500;
+                font-size: 1.2rem;
+                text-align: center;
+                color: $half-white
+            }
+        }
+    }
+    .frame-grp{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2em;
+        .box{
+            background: rgba(40, 40, 40, 0.25);
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+    }
+    .tool-grp{
+        .box{
+            background: rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+    }
+}
+
+
+@media screen and (max-width:850px) {
+    .services{
+        height: auto;
+        padding: 3em 1em;
+        gap: 2em;
+        .grp{
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            row-gap: 1em;
+            place-items: center;
+            justify-content: space-evenly;
+            .box{
+                width: 7em;
+                height: 7em;
+                svg{
+                    width: 30px;
+                    height: 30px;
+                }
+                h1{
+                    font-size: 1.1rem;
+                    color: $half-white;
+                }
+            }
+        }
+        .frame-grp{
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            gap: 0em;
+            row-gap: 1em;         
+            place-items: center;
+        }
+    }
+}
+
+@media screen and (max-width:550px) {
+    .services{
+        .grp{
+            grid-template-columns: auto auto auto;
+        }
+        .frame-grp{
+            grid-template-columns: auto auto auto;
+        }
+    }
+}

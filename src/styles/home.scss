@@ -1,0 +1,199 @@
+@import './global.scss';
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 1em;
+    padding-bottom: 4em;
+    .hi{
+        font-family: $primary-font;
+        font-weight: 500;
+        font-size: 1.56rem;        
+        text-align: center;
+        color: $white;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        span{
+            color: $primary-color;
+            font-weight: 700;
+            font-family: $primary-font;
+        }
+    }
+    .photo-container{
+        min-width: 220px;
+        height: 250px;
+        border: 12px solid $grad-bg;
+        background-image: url("../assets/homephoto.jpg");
+        background-position: center center;
+        background-size: cover;
+        border-radius: 50%;
+        box-shadow: $photo-shadow;
+    }
+
+    .subtext{
+        display: flex;
+        flex-direction: column;
+        align-self: flex-start;
+        justify-content: space-between;
+        margin-left: 1.875em;
+        margin-right: 1.875em;
+        gap: 1em;
+        .iam{
+            font-family: $primary-font;
+            font-weight: 500;
+            font-size: 1.6rem;
+            line-height: 38px;
+            color: $primary-color;
+            align-self: flex-start;
+            text-align: left;
+            span{
+                color: $half-white;
+                position: relative;
+                padding-right: 2px;
+            }
+            span::after{
+                content: "";
+                height: 100%;
+                position: absolute;
+                border-right: 2px solid $half-white;
+                animation: blink 1s infinite ease;
+            }
+        }
+        .desc{
+            padding-right: 5px;
+            font-family: $primary-font;
+            font-weight: 400;
+            font-size: 1rem;
+            align-self: flex-start;
+            text-align: justify;
+            color: $text-white;
+    
+        }
+        .buttons{
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: 1.25em;
+            height: auto;
+            align-self: flex-start;
+            margin-top: 2em;
+            .hire, .resume{
+                background-color: $nav-bg;
+                color: $primary-color;
+                padding: .3em 1.5em;
+                font-family: $primary-font;
+                transition: all .5s linear;
+                font-weight: 700;
+                font-size: 1rem;
+                text-align: center;
+                text-decoration: none;
+                border-radius: 5px;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                &:hover{
+                    background-color: $primary-color;
+                    color: $nav-bg;
+                    transition: padding .3s ease-in-out;
+                }
+            }
+        }
+    }
+    .scroll{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+        transform: rotate(90deg);
+        animation: updown 3s ease-in-out infinite;
+    }
+}
+
+@keyframes updown{
+    0%{
+        bottom: 5em;
+        color: red;
+    }
+    50%{
+        bottom: 8em;
+    }
+    100%{
+        bottom: 5em;
+    }
+}
+
+@keyframes blink{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+
+@media only screen and (min-width: 1250px){
+    .hero{
+        display: grid;
+        width: calc(100vw - 17.18em);
+        place-items: center;
+        justify-items: start;
+        grid-template-columns: auto auto;
+        row-gap: 1.5em;
+        padding: 0;
+        padding-top: 2em;
+        .hi{
+            flex-direction: row;
+            justify-content: space-between;
+            font-family: $primary-font;
+            font-weight: 500;
+            font-size: 3rem;
+            span{
+                margin-left: 10px;
+                font-weight: 700;
+                font-family: $cursive-font;
+                font-size: 3.9rem;
+            }
+        }
+        .photo-container{
+            grid-row: span 2;
+            width: 320px;
+            height: 400px;
+            .homephoto{
+                width: 280px;
+                height: 360px;
+                box-shadow: inset 0px 12px 12px rgba(0, 0, 0, 0.25);
+            }
+        }
+        .subtext{
+            margin: 0;
+            .iam{
+                font-family: $primary-font;
+                font-weight: 500;
+                font-size: 2rem;
+            }
+            .desc{
+                width: 45vw;
+                line-height: 25px;
+                text-align: left;
+                font-size: 1rem;
+            }
+            .buttons{
+                margin: 0;
+                margin-top: 2em;
+                .hire, .resume{
+                    font-size: 1rem;
+                    font-weight: 500;
+                    border-radius: 5px;
+                    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                }
+            }
+        }
+
+        .scroll{
+            right: 1em;
+        }
+    }
+}
