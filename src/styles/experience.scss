@@ -8,8 +8,8 @@
     align-items: center;
     font-family: $primary-font; 
     overflow-y: scroll; 
-    min-height: 100vh;
-    
+    padding: 3em 0em;
+    gap: 1em;
     header{
         display: flex;
         justify-content: space-evenly;

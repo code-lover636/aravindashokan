@@ -1,8 +1,11 @@
-import {useRef} from 'react'
+import React, { useEffect, useRef } from 'react';
+
 import '../styles/navbar.scss'
+
 
 const Navbar = () => {
   const nav = useRef(0);
+  selection(nav);
   return (
     <>
         <nav ref={nav}>
