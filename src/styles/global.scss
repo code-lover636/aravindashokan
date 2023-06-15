@@ -37,7 +37,7 @@ html {
     scroll-behavior: smooth;
   }
    
-
+  
 body{
     overflow-x: hidden;
     #root{
@@ -46,6 +46,7 @@ body{
         overflow-y: scroll;
         scroll-snap-type: y mandatory;
         scroll-behavior: smooth;
+        // scroll-padding: 10px;
     }
     section{
         scroll-snap-align: start;

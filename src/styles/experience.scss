@@ -8,6 +8,8 @@
     align-items: center;
     font-family: $primary-font; 
     overflow-y: scroll; 
+    min-height: 100vh;
+    
     header{
         display: flex;
         justify-content: space-evenly;
