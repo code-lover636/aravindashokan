@@ -33,7 +33,23 @@ const Card = props =>{
 const Achievements = () => {
   const ACHIEVEMENTS = [
     {
-        "event": "Web Wiz[Website]",
+        "event": "Magic2.0[Hackathon]",
+        "date": "Dec 2022",
+        "prize": "First Prize",
+        "by": "IEEE SB MEC",
+        "img": "../../assets/achievements/magic.png" ,
+        "details": "Magic2.0 is an overnight flagship event of IEEE SB | MEC."
+    },
+    {
+        "event": "Creaza",
+        "date": "May 2023",
+        "prize": "First Prize",
+        "by": "IEEE SB FISAT",
+        "img": "../../assets/achievements/creaza.jpg" ,
+        "details": "Logo making competition held as part of International Women's Day for Peace and Disarmament."
+    },
+    {
+        "event": "Web Wiz",
         "date": "Apr 2023",
         "prize": "First Prize",
         "by": "IEEE SB GECT",
@@ -41,7 +57,7 @@ const Achievements = () => {
         "details": "Web Wiz is a portfolio website competition organized by IEEE computer society | GECT."
     },
     {
-        "event": "4x120[Coding]",
+        "event": "4x120",
         "date": "Mar 2023",
         "prize": "Third Prize",
         "by": "Excel MEC",
@@ -49,20 +65,12 @@ const Achievements = () => {
         "details": "4x120 is group coding contest conducted as a part of Excel, the techno-managerial festival of MEC."
     },
     {
-        "event": "Ozone[Coding]",
+        "event": "Ozone",
         "date": "Feb 2023",
         "prize": "Winner",
         "by": "TLE MEC",
         "img": "../../assets/achievements/ozone.png" ,
         "details": "Ozone pair coding contest organized by TLE MEC was held around Valentine's Day."
-    },
-    {
-        "event": "Magic2.0[Hackathon]",
-        "date": "Dec 2022",
-        "prize": "First Prize",
-        "by": "IEEE MEC SB",
-        "img": "../../assets/achievements/magic.png" ,
-        "details": "Magic2.0 is an overnight flagship event of IEEE SB | MEC."
     },
   ];
   return (
