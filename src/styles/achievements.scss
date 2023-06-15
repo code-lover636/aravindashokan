@@ -1,0 +1,87 @@
+@import './global.scss';
+
+.achievements{
+    display: grid;
+    place-items: center;
+    padding: 2em 4em;    
+    .swiper {
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 300px;
+        height: auto;
+        background-color: transparent;
+        .container{
+            background: linear-gradient(334.69deg, #FFFFFF 2.16%, #7CCDFF 52.61%, #009EFF 100%);
+            backdrop-filter: blur(5px);
+            width: 100%;
+            height: 100%;
+            padding: 10px;
+            font-family: $primary-font;
+            .cover{
+                width: 100%;
+                min-height: 280px;
+                border-radius: 5px;
+            }
+            .content{
+                padding: .5em 1em;
+                .row1{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-bottom: .7em;
+                    .prize{
+                        color: $primary-color;
+                        font-weight: 700;
+                        font-size: 1.25rem;
+                    }
+                    .date{
+                        color: $half-black;
+                        font-weight: 700;
+                        font-size: .875rem;
+                    }
+                }
+                .row2{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    border-bottom: 2px solid $primary-color;
+                    color: $primary-color;
+                    margin-bottom: .5em;
+                    .event{
+                        font-size: .87rem;
+                        color: black;
+                    }
+                    .by{
+                        font-size: .87rem;
+                        color: black;
+                    }
+                }
+                .details{
+                    font-size: .87rem;
+                }
+            }
+        }
+    }
+    .swiper-pagination-bullet {
+        background-color: $quarter-white;
+        width: 8px;
+        height: 8px;
+        margin: 0 5px;
+      }
+      
+      .swiper-pagination-bullet-active {
+        opacity: 1;
+        background-color: $primary-color;
+      }
+}
+
+@media screen and (max-width:550px) {
+    .achievements{
+        padding: 0 1em;
+    }
+}
