@@ -22,12 +22,14 @@ const Experience = () => {
   const hac = useRef(0), int = useRef(1), pos = useRef(2);
   const internExp = [
     {
+        "id": 0,
         "desig": "UI/UX Designer",
         "date": "Mar-Apr 2023",
         "company": "Madhyam Change Foundation",
         "content": "Worked on competitive analysis, user flow, wireframing, moodboards, design, prototyping"
     },
     {
+        "id": 1,
         "desig": "",
         "date": "",
         "company": "",
@@ -36,30 +38,35 @@ const Experience = () => {
   ];
   const hackExp = [
     {
+        "id": 0,
         "desig": "SlashKey",
         "date": "May 2023",
         "company": "IEEE CUSAT | INTEL",
         "content": "Worked on a music recommeder website based on machine learning."
     },
     {
+        "id": 1,
         "desig": "Devjam",
         "date": "May 2023",
         "company": "Devfolio",
         "content": "Worked on a web based project(ChatSecure) which uses machine learning and NLP to classify spam messages."
     },
     {
+        "id": 2,
         "desig": "Technohack",
         "date": "Mar 2023",
         "company": "IEDC MEC",
         "content": "Worked on a web based project(Untangled) designed to help individuals who may be experiencing depression or other related mental health concerns."
     },
     {
+        "id": 3,
         "desig": "Magic2.0",
         "date": "Dec 2022",
         "company": "IEE SB | MEC",
         "content": "Worked on a food donation website that allows individuals to list excess food that is available and allows those in need to pick up food from them."
     },
     {
+        "id": 4,
         "desig": "",
         "date": "",
         "company": "",
@@ -68,36 +75,42 @@ const Experience = () => {
   ];
   const posExp = [
     {
+        "id": 0,
         "desig": "Tech Team Core Member",
         "date": "May 2023 - [present]",
         "company": "FOSS MEC",
         "content": ""
     },
     {
+        "id": 1,
         "desig": "Design Team Core Member",
         "date": "May 2023 - [present]",
         "company": "FOSS MEC",
         "content": ""
     },
     {
+        "id": 2,
         "desig": "UI/UX Team Core Member",
         "date": "May 2023 - [present]",
         "company": "FOSS MEC",
         "content": ""
     },
     {
+        "id": 3,
         "desig": "Tech Trainee",
         "date": "May 2023 - [present]",
         "company": "TinkerHub MEC",
         "content": ""
     },
     {
+        "id": 4,
         "desig": "Design Team Member",
         "date": "Apr 2023 - [present]",
         "company": "TBT MEC",
         "content": ""
     },
     {
+        "id": 5,
         "desig": "",
         "date": "",
         "company": "",
@@ -152,7 +165,7 @@ const Experience = () => {
         </header>
         <div className="container">
             <div className="card">
-                { display.map( exp => <Expdetails desig={exp["desig"]} date={exp["date"]} company={exp["company"]} content={exp["content"]}/> ) }
+                { display.map( exp => <Expdetails key={exp["id"]} desig={exp["desig"]} date={exp["date"]} company={exp["company"]} content={exp["content"]}/> ) }
             </div>
             <div className="line"></div>
         </div>

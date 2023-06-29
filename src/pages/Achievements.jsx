@@ -33,6 +33,7 @@ const Card = props =>{
 const Achievements = () => {
   const ACHIEVEMENTS = [
     {
+        "id": 0,
         "event": "Magic2.0[Hackathon]",
         "date": "Dec 2022",
         "prize": "First Prize",
@@ -41,6 +42,7 @@ const Achievements = () => {
         "details": "Magic2.0 is an overnight flagship event of IEEE SB | MEC."
     },
     {
+        "id": 1,
         "event": "Creaza",
         "date": "May 2023",
         "prize": "First Prize",
@@ -49,6 +51,7 @@ const Achievements = () => {
         "details": "Logo making competition held as part of International Women's Day for Peace and Disarmament."
     },
     {
+        "id": 2,
         "event": "Web Wiz",
         "date": "Apr 2023",
         "prize": "First Prize",
@@ -57,6 +60,7 @@ const Achievements = () => {
         "details": "Web Wiz is a portfolio website competition organized by IEEE computer society | GECT."
     },
     {
+        "id": 3,
         "event": "4x120",
         "date": "Mar 2023",
         "prize": "Third Prize",
@@ -65,6 +69,7 @@ const Achievements = () => {
         "details": "4x120 is group coding contest conducted as a part of Excel, the techno-managerial festival of MEC."
     },
     {
+        "id": 4,
         "event": "Ozone",
         "date": "Feb 2023",
         "prize": "Winner",
@@ -93,7 +98,7 @@ const Achievements = () => {
             pagination={{ clickable: true }}
         >
         {ACHIEVEMENTS.map( item =>
-            <SwiperSlide>
+            <SwiperSlide key={item['id']}>
                 <Card img={item['img']}
                       date={item['date']}
                       prize={item['prize']}

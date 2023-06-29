@@ -21,7 +21,7 @@ const Slider = props =>{
       <h1>{props.name}</h1>
       <p>{props.desc}</p>
       <ul>
-        {props.tools.map(item => <li>{item}</li>)}
+        {props.tools.map(item => <li key={props.tools.indexOf(item)}>{item}</li>)}
       </ul>
       <div className="btn-wrap">
         { props.hosted !=="" ?
@@ -115,7 +115,7 @@ export default function Work() {
         className="mySwiper2"
       >
         
-        {PROJECTS.map(item => <SwiperSlide> <Slider name={item["name"]} desc={item["desc"]} image={item["image"]} tools={item["tools"]} hosted={item["hosted"]} code={item["code"]} /> </SwiperSlide>)}
+        {PROJECTS.map(item => <SwiperSlide key={item["name"]}> <Slider name={item["name"]} desc={item["desc"]} image={item["image"]} tools={item["tools"]} hosted={item["hosted"]} code={item["code"]} /> </SwiperSlide>)}
       </Swiper>
       <Swiper
         onSwiper={setThumbsSwiper}
@@ -126,7 +126,7 @@ export default function Work() {
         modules={[FreeMode, Navigation, Thumbs]}
         className="mySwiper"
       >
-        {PROJECTS.map(item => <SwiperSlide> <img src={item["image"]} alt={item["name"]} /> </SwiperSlide>)}
+        {PROJECTS.map(item => <SwiperSlide key={item["name"]}> <img src={item["image"]} alt={item["name"]} /> </SwiperSlide>)}
       </Swiper>
     </section>
   );
