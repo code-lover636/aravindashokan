@@ -43,21 +43,21 @@ const Achievements = () => {
     },
     {
         "id": 1,
-        "event": "Creaza",
-        "date": "May 2023",
-        "prize": "First Prize",
-        "by": "IEEE SB FISAT",
-        "img": "../../assets/achievements/creaza.jpg" ,
-        "details": "Logo making competition held as part of International Women's Day for Peace and Disarmament."
-    },
-    {
-        "id": 2,
         "event": "Web Wiz",
         "date": "Apr 2023",
         "prize": "First Prize",
         "by": "IEEE SB GECT",
         "img": "../../assets/achievements/webwiz.png" ,
         "details": "Web Wiz is a portfolio website competition organized by IEEE computer society | GECT."
+    },
+    {
+        "id": 2,
+        "event": "Creaza",
+        "date": "May 2023",
+        "prize": "First Prize",
+        "by": "IEEE SB FISAT",
+        "img": "../../assets/achievements/creaza.jpg" ,
+        "details": "Logo making competition held as part of International Women's Day for Peace and Disarmament."
     },
     {
         "id": 3,

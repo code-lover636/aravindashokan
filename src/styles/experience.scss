@@ -4,12 +4,13 @@
 .exp{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     align-items: center;
     font-family: $primary-font; 
     overflow-y: scroll; 
     padding: 3em 0em;
-    gap: 1em;
+    gap: 3em;
+
     header{
         display: flex;
         justify-content: space-evenly;

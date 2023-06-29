@@ -34,7 +34,7 @@ const Home = () => {
             </p> 
             <div className="buttons">
                 <a href="#contact" className="hire">Hire Me</a>
-                <a target="_blank" href="https://drive.google.com/file/d/1ieKP6-ntLa3BuNRl8Q6CXJNqc9KC5utn/view?usp=sharing" className="resume">My Resume</a>
+                <a target="_blank" href="https://drive.google.com/file/d/1JTkeffVV4UAUJw3I-sVUX9MrhmlGdUw_/view?usp=sharing" className="resume">My Resume</a>
             </div>         
         </div>
 

@@ -62,7 +62,7 @@ const Experience = () => {
         "id": 3,
         "desig": "Magic2.0",
         "date": "Dec 2022",
-        "company": "IEE SB | MEC",
+        "company": "IEEE SB | MEC",
         "content": "Worked on a food donation website that allows individuals to list excess food that is available and allows those in need to pick up food from them."
     },
     {
@@ -106,7 +106,7 @@ const Experience = () => {
         "id": 4,
         "desig": "Design Team Member",
         "date": "Apr 2023 - [present]",
-        "company": "TBT MEC",
+        "company": "The Book Thieves MEC",
         "content": ""
     },
     {
