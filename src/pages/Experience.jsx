@@ -117,11 +117,11 @@ const Experience = () => {
         "content": ""
     }
   ];
-  const [display, setDisplay] = useState(internExp);
+  const [display, setDisplay] = useState(hackExp);
   return (
     <section className="exp" id="experience">
         <header>
-            <h2 ref={int} className="active" onClick={() => {
+            <h2 ref={int} onClick={() => {
                 setDisplay(internExp); 
                 hac.current.classList.remove("active");
                 int.current.classList.add("active");
@@ -132,7 +132,7 @@ const Experience = () => {
                 </svg>
                 Internships
             </h2>
-            <h2 ref={hac} onClick={() => {
+            <h2 ref={hac} className="active" onClick={() => {
                 setDisplay(hackExp); 
                 hac.current.classList.add("active");
                 int.current.classList.remove("active");
