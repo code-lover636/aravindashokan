@@ -11,7 +11,6 @@ import Work from './pages/Work'
 
 
 function App() {
-  
   return (
     <>
       <Navbar />

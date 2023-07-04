@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import { motion } from "framer-motion"
+import { motion, useScroll } from "framer-motion"
 import '../styles/navbar.scss'
 
 
@@ -13,7 +13,11 @@ const Navbar = () => {
       pathLength: 1,
     }
   }
-    
+  const [scrollYProgress, setScrollYProgress] = useState(0);
+
+  const handleScroll = () => {
+    setScrollYProgress(window.scrollY);
+  };
   return (
     <>
         <nav ref={nav}>
