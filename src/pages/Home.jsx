@@ -1,6 +1,7 @@
 import {useEffect, useState} from 'react'
 import '../styles/home.scss'
 
+
 const typeAnim = (skill, setSkill, SKILLS, count, index, current, letter) =>{
     
     if(count === SKILLS.length){ count = 0; }
@@ -24,8 +25,8 @@ const Home = () => {
     useEffect(() =>{typeAnim(skill, setSkill, SKILLS, count, index, current, letter)},[])
   return (
     <section className="hero" id="home" data-theme="dark">
-            
         <h1 className="hi">Hi, I'm <span>Aravind Ashokan.</span></h1>
+        
         <div className="photo-container"></div>
         <div className="subtext">
             <h1 className="iam">I'm a <span className="typing">{skill}</span></h1>
