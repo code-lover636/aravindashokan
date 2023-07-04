@@ -28,10 +28,11 @@ $nav-li-sh: 2px 2px 0px #0b0b0b,
     padding: 0;
     box-sizing: border-box;
     outline: none;
+    &::-webkit-scrollbar {
+        display: none;
+    }
 }
-::-webkit-scrollbar {
-    display: none;
-}
+
 
 html {
     scroll-behavior: smooth;
@@ -46,7 +47,6 @@ body{
         overflow-y: scroll;
         scroll-snap-type: y mandatory;
         scroll-behavior: smooth;
-        // scroll-padding: 10px;
     }
     section{
         scroll-snap-align: start;

@@ -28,13 +28,6 @@ const Experience = () => {
         "company": "Madhyam Change Foundation",
         "content": "Worked on competitive analysis, user flow, wireframing, moodboards, design, prototyping"
     },
-    {
-        "id": 1,
-        "desig": "",
-        "date": "",
-        "company": "",
-        "content": ""
-    }
   ];
   const hackExp = [
     {
@@ -65,13 +58,6 @@ const Experience = () => {
         "company": "IEEE SB | MEC",
         "content": "Worked on a food donation website that allows individuals to list excess food that is available and allows those in need to pick up food from them."
     },
-    {
-        "id": 4,
-        "desig": "",
-        "date": "",
-        "company": "",
-        "content": ""
-    }
   ];
   const posExp = [
     {
@@ -109,13 +95,6 @@ const Experience = () => {
         "company": "The Book Thieves MEC",
         "content": ""
     },
-    {
-        "id": 5,
-        "desig": "",
-        "date": "",
-        "company": "",
-        "content": ""
-    }
   ];
   const [display, setDisplay] = useState(hackExp);
   return (
@@ -168,6 +147,7 @@ const Experience = () => {
                 { display.map( exp => <Expdetails key={exp["id"]} desig={exp["desig"]} date={exp["date"]} company={exp["company"]} content={exp["content"]}/> ) }
             </div>
             <div className="line"></div>
+            <div className="last-dot"></div>
         </div>
     </section>
   )
