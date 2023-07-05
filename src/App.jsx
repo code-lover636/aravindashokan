@@ -8,6 +8,7 @@ import Contact from './pages/Contact'
 import Achievements from './pages/Achievements'
 import Services from './pages/Services'
 import Work from './pages/Work'
+import Loading from './pages/Loading'
 
 
 function App() {
@@ -35,6 +36,7 @@ function App() {
 
   return (
     <>
+      <Loading />
       <Navbar activeSection={activeSection} />
       <Home className="sections" id="home-s"/>
       <About className="sections" id="about-s"/>

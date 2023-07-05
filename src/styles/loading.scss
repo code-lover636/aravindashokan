@@ -1,0 +1,64 @@
+@import './global.scss';
+
+.loading-screen{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 500;
+    width: 100vw;
+    height: 100vh;
+    background-color: $nav-bg;
+    display: grid;
+    place-items: center;
+    h1{
+        color: #fff;
+        font-size: 5rem;
+        text-align: center;
+        width: 100%;
+        font-family: Poppins;
+        font-weight: 900;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -80%);
+    }
+    .myname1{
+        color: transparent;
+        -webkit-text-stroke: 2px $primary-color
+    }
+    .myname2{
+        color: $primary-color;
+        animation: animate 4s ease-in-out infinite;
+    }
+}
+
+@keyframes animate {
+	0%,
+	100% {
+		clip-path: polygon(
+			0% 0%,
+			16% 44%,
+			33% 50%,
+			54% 60%,
+			70% 61%,
+			84% 59%,
+			100% 52%,
+			100% 100%,
+			0% 100%
+		);
+	}
+
+	50% {
+		clip-path: polygon(
+			0% 60%,
+			15% 65%,
+			34% 66%,
+			51% 62%,
+			67% 50%,
+			84% 45%,
+			100% 46%,
+			100% 100%,
+			0% 100%
+		);
+	}
+}
