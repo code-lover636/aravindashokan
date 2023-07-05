@@ -1,9 +1,9 @@
-import React, { useEffect, useRef } from 'react';
-import { motion, useScroll } from "framer-motion"
+import React, { useState, useRef, useEffect } from 'react';
+import { motion} from "framer-motion"
 import '../styles/navbar.scss'
 
 
-const Navbar = () => {
+const Navbar = ({activeSection}) => {
   const nav = useRef(0);
   const icon = {
     hidden: {
@@ -13,16 +13,12 @@ const Navbar = () => {
       pathLength: 1,
     }
   }
-  const [scrollYProgress, setScrollYProgress] = useState(0);
 
-  const handleScroll = () => {
-    setScrollYProgress(window.scrollY);
-  };
   return (
     <>
         <nav ref={nav}>
         <a className="logo-wrapper" href="#home">
-            <svg
+          <svg
           xmlns="http://www.w3.org/2000/svg"
           className="logo" 
           width="193" 
@@ -66,17 +62,16 @@ const Navbar = () => {
                 fill: { duration: 2, ease: [1, 0, 0.8, 1] }
               }}
           />
-            </svg>
+          </svg>
         </a>
-
         <ul>
-            <li className="close"><a href="#home">Home</a></li>
-            <li className="close"><a href="#about">About</a></li>
-            <li className="close"><a href="#achievements">Achievements</a></li>
-            <li className="close"><a href="#services">Services</a></li>
-            <li className="close"><a href="#experience">Experience</a></li>
-            <li className="close"><a href="#work">Work</a></li>
-            <li className="close"><a href="#contact">Contact Me</a></li>
+            <li><a className={activeSection === 'home' ? 'nav-link selected' : 'nav-link'} href="#home">Home</a></li>
+            <li><a className={activeSection === 'about' ? 'nav-link selected' : 'nav-link'} href="#about">About</a></li>
+            <li><a className={activeSection === 'achievements' ? 'nav-link selected' : 'nav-link'} href="#achievements">Achievements</a></li>
+            <li><a className={activeSection === 'services' ? 'nav-link selected' : 'nav-link'} href="#services">Services</a></li>
+            <li><a className={activeSection === 'experience' ? 'nav-link selected' : 'nav-link'} href="#experience">Experience</a></li>
+            <li><a className={activeSection === 'work' ? 'nav-link selected' : 'nav-link'} href="#work">Work</a></li>
+            <li><a className={activeSection === 'contact' ? 'nav-link selected' : 'nav-link'} href="#contact">Contact Me</a></li>
         </ul>
         <svg onClick={()=>{nav.current.classList.toggle("open-nav")}}  className="close closebtn" width="50" height="116" viewBox="0 0 50 116" fill="none" xmlns="http://www.w3.org/2000/svg">
         <circle cx="25" cy="91" r="25" fill="#D9D9D9"/>
@@ -85,7 +80,7 @@ const Navbar = () => {
         <path fillRule="evenodd" clipRule="evenodd" d="M25.0002 17.6172C26.8754 17.6172 28.6738 18.3621 29.9997 19.6881C31.3257 21.014 32.0706 22.8125 32.0706 24.6877C32.0706 26.5629 31.3257 28.3613 29.9997 29.6872C28.6738 31.0132 26.8754 31.7581 25.0002 31.7581C23.125 31.7581 21.3265 31.0132 20.0006 29.6872C18.6746 28.3613 17.9297 26.5629 17.9297 24.6877C17.9297 22.8125 18.6746 21.014 20.0006 19.6881C21.3265 18.3621 23.125 17.6172 25.0002 17.6172V17.6172ZM25.0002 22.3308C25.6252 22.3308 26.2247 22.5791 26.6667 23.0211C27.1087 23.4631 27.357 24.0626 27.357 24.6877C27.357 25.3127 27.1087 25.9122 26.6667 26.3542C26.2247 26.7962 25.6252 27.0445 25.0002 27.0445C24.3751 27.0445 23.7756 26.7962 23.3336 26.3542C22.8916 25.9122 22.6433 25.3127 22.6433 24.6877C22.6433 24.0626 22.8916 23.4631 23.3336 23.0211C23.7756 22.5791 24.3751 22.3308 25.0002 22.3308V22.3308Z" fill="#C7BEBE"/>
         </svg>
              
-    </nav>
+        </nav>
     <svg onClick={()=>{nav.current.classList.toggle("open-nav")}} className="menu" width="50" height="23" viewBox="0 0 50 23" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M0 0H30V5H0V0Z" fill="#0077C0"/>
         <path d="M0 9H40V14H0V9Z" fill="#0077C0"/>

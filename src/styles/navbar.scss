@@ -58,6 +58,7 @@ nav{
                 font-size: 1.3rem;
                 text-align: center;
                 color: $teal;
+                transition: all .2s ease;
             }
             .selected{
                 color: $primary-color;
