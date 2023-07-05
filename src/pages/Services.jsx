@@ -1,13 +1,21 @@
 import React from 'react'
-
+import {motion} from "framer-motion"
 import '../styles/service.scss'
 
 const BoxView = props => {
   return (
-    <div className="box">
-      {props.image}
-      <h1>{props.name}</h1>
-    </div>
+  <motion.div
+    whileHover={{ scale: 1.2 }}
+    whileTap={{
+      scale: 0.8,
+      borderRadius: "100%"
+    }}
+    >
+      <div className="box">
+        {props.image}
+        <h1>{props.name}</h1>
+      </div>
+  </motion.div>
   );
 }
 
