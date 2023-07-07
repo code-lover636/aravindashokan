@@ -5,7 +5,10 @@ import '../styles/service.scss'
 const BoxView = props => {
   return (
   <motion.div
-    whileHover={{ scale: 1.2 }}
+    whileHover={{ scale: 1.1 }}
+    initial={{ scale:0.5 }}
+    whileInView={{ scale: 1 }}
+    transition={{duration: .5}}
     whileTap={{
       scale: 0.8,
       borderRadius: "100%"

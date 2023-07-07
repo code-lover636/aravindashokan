@@ -5,7 +5,7 @@ import '../styles/loading.scss'
 const Loading = () => {
     const [scope, animate] = useAnimate()
     useEffect(() => {
-        animate(scope.current, { y: "-100vh" }, { duration: 1, delay: 5 }, )
+        animate(scope.current, { y: "-100vh" }, { duration: 1, delay: 10 }, )
      }, [])
     return (
     <>

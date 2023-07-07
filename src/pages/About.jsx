@@ -1,5 +1,5 @@
 import React from 'react'
-
+import {motion} from 'framer-motion'
 import '../styles/about.scss'
 
 const About = () => {
@@ -38,31 +38,36 @@ const About = () => {
                 <div className="numbar">
                     1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
                 </div>
+                <motion.div
+                initial={{ opacity:0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{duration: 1}}
+                >
                 <div className="code">
-                
-                <span className="blue">import</span> about <span className="blue">from</span> "life.js";
-                <br /> <br />
-                <span className="blue">var</span> NAME = <span className="brown">"Aravind Ashokan"</span>; <br />
-                <span className="blue">var</span> EMAIL_ID = <span className="brown">"aravindashokan636@gmail.com"</span>; <br />
-                <span className="blue">var</span> EDUCATION = <span className="brown">"Computer Science Engineering"</span>; <br />
-                <span className="blue">var</span> LAST_WORKED = <span className="brown">"UI/UX design intern at Madhyam Change Foundation"</span>; <br />
-                <span className="blue">var</span> SKILLS =<span className="blue">{"{"}</span>
-                <span className="brown">"Programming"</span>, 
-                <span className="brown"> "Web Development"</span>,  
-                <span className="brown"> "UI/UX Design"</span>,
-                <span className="brown"> "Machine Learning"</span>
-                <span className="blue">{"}"}</span>;
-                <br /> <br />
-                <span className="green">console</span><span className="yellow">.log</span>{"("}
-                <span className="brown">"
-                    {"As a driven and inquisitive programmer, I am currently focused on learning full-stack web development."} 
-                    {"My passion lies in creating websites, web applications, and exploring the potential of web scraping and APIs."}
-                    {"I remain committed to keeping up with the latest technologies and industry best practices,"} 
-                    {"and I am eager to expand my skill set through continued learning."}
-                    "
-                </span>
-                {");"}
+                    <span className="blue">import</span> about <span className="blue">from</span> "life.js";
+                    <br /> <br />
+                    <span className="blue">var</span> NAME = <span className="brown">"Aravind Ashokan"</span>; <br />
+                    <span className="blue">var</span> EMAIL_ID = <span className="brown">"aravindashokan636@gmail.com"</span>; <br />
+                    <span className="blue">var</span> EDUCATION = <span className="brown">"Computer Science Engineering"</span>; <br />
+                    <span className="blue">var</span> LAST_WORKED = <span className="brown">"UI/UX design intern at Madhyam Change Foundation"</span>; <br />
+                    <span className="blue">var</span> SKILLS =<span className="blue">{"{"}</span>
+                    <span className="brown">"Programming"</span>, 
+                    <span className="brown"> "Web Development"</span>,  
+                    <span className="brown"> "UI/UX Design"</span>,
+                    <span className="brown"> "Machine Learning"</span>
+                    <span className="blue">{"}"}</span>;
+                    <br /> <br />
+                    <span className="green">console</span><span className="yellow">.log</span>{"("}
+                    <span className="brown">"
+                        {"As a driven and inquisitive programmer, I am currently focused on learning full-stack web development."} 
+                        {"My passion lies in creating websites, web applications, and exploring the potential of web scraping and APIs."}
+                        {"I remain committed to keeping up with the latest technologies and industry best practices,"} 
+                        {"and I am eager to expand my skill set through continued learning."}
+                        "
+                    </span>
+                    {");"}
                 </div>
+                </motion.div>
             </div>
         </main>
     </section>
