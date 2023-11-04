@@ -54,8 +54,16 @@ export default function Work() {
       "desc": "Spam classifier",
       "image": "../../assets/projects/chatsecure.png",
       "tools": ["React", "Vite", "Sass","Python", "Fast API", "Machine Learning and NLP"],
-      "hosted": "",
+      "hosted": "https://chatsecure.netlify.app",
       "code": "https://github.com/code-lover636/ChatSecure"
+    },
+    { 
+      "name": "SIGNAL",
+      "desc": "Sign language interpreter",
+      "image": "../../assets/projects/sign.jpeg",
+      "tools": ["Machine Learning", "OpenCV", "Mediapipe", "Streamlit"],
+      "hosted": "",
+      "code": "https://github.com/code-lover636/Signal_Sign_Language_Interpreter"
     },
     { 
       "name": "GRANGER",
