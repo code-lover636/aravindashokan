@@ -21,7 +21,7 @@ const Card = props =>{
                 </div>
                 <div className="row2">
                     <h1 className="event">{props.event}</h1>
-                    |
+                    
                     <h1 className="by">{props.by}</h1>
                 </div>
                 <p className="details">{props.details}</p>
@@ -43,6 +43,15 @@ const Achievements = () => {
     },
     {
         "id": 1,
+        "event": "MaveliGPT",
+        "date": "Oct 2023",
+        "prize": "First Prize",
+        "by": "TinkerHub Toc H",
+        "img": "../../assets/achievements/mavelibot.jpeg" ,
+        "details": "MaveliGPT is a chatbot making competition conducted by TinkerHub Toc H"
+    },
+    {
+        "id": 2,
         "event": "Web Wiz",
         "date": "Apr 2023",
         "prize": "First Prize",
@@ -51,7 +60,7 @@ const Achievements = () => {
         "details": "Web Wiz is a portfolio website competition organized by IEEE computer society | GECT."
     },
     {
-        "id": 2,
+        "id": 3,
         "event": "Creaza",
         "date": "May 2023",
         "prize": "First Prize",
@@ -60,7 +69,25 @@ const Achievements = () => {
         "details": "Logo making competition held as part of International Women's Day for Peace and Disarmament."
     },
     {
-        "id": 3,
+        "id": 4,
+        "event": "Code Onam | Begineer",
+        "date": "Oct 2023",
+        "prize": "Second Prize",
+        "by": "TLE MEC",
+        "img": "../../assets/achievements/codeonam_basic.jpeg" ,
+        "details": "Code onam is coding contest conducted by TLE MEC was held around Onam."
+    },
+    {
+        "id": 5,
+        "event": "Code Onam | Intermediate",
+        "date": "Oct 2023",
+        "prize": "Third Prize",
+        "by": "TLE MEC",
+        "img": "../../assets/achievements/codeonam_intermediate.jpeg" ,
+        "details": "Code onam is coding contest conducted by TLE MEC was held around Onam."
+    },
+    {
+        "id": 6,
         "event": "4x120",
         "date": "Mar 2023",
         "prize": "Third Prize",
@@ -69,13 +96,22 @@ const Achievements = () => {
         "details": "4x120 is group coding contest conducted as a part of Excel, the techno-managerial festival of MEC."
     },
     {
-        "id": 4,
+        "id": 7,
         "event": "Ozone",
         "date": "Feb 2023",
         "prize": "Winner",
         "by": "TLE MEC",
         "img": "../../assets/achievements/ozone.png" ,
         "details": "Ozone pair coding contest organized by TLE MEC was held around Valentine's Day."
+    },
+    {
+        "id": 8,
+        "event": "Mavelikk oru Portfolio",
+        "date": "Oct 2023",
+        "prize": "Third Prize",
+        "by": "Gtech mulearn",
+        "img": "../../assets/achievements/gtech.jpeg" ,
+        "details": "'Mavelikk oru Portfolio' is a UI/UX portfolio making competion conducted by Gtech mulearn."
     },
   ];
   return (

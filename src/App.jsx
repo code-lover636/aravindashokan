@@ -13,7 +13,7 @@ import Loading from './pages/Loading'
 
 function App() {
   
-  const [activeSection, setActiveSection] = useState('');
+  const [activeSection, setActiveSection] = useState('home');
   useEffect(() => {
     const handleScroll = () => {
       const sections = document.querySelectorAll('section');
