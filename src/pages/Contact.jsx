@@ -91,9 +91,9 @@ const Contact = () => {
             </ul>
         </div>
         <form method="POST" className="message-box">
-                <input type="name" name="name" className="name" placeholder="Name" required />
-                <input type="email" className="email" name="email" placeholder="Email ID" required />
-                <textarea name="message" cols="30" rows="10" className="message" placeholder="Message" required></textarea>
+                <input type="name" name="name" className="name" placeholder="Your Name" required />
+                <input type="email" className="email" name="email" placeholder="Your Email ID" required />
+                <textarea name="message" cols="30" rows="10" className="message" placeholder="Write a Message" required></textarea>
                 <button onClick={sendMsg} className="submit" type="submit">SEND</button>
         </form>
         </div>

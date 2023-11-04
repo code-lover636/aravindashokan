@@ -20,7 +20,7 @@ const Home = () => {
     let index = 0;
     let current = '';
     let letter = '';
-    const SKILLS = ["Web Developer", "Web Designer", "Programmer", "GUI Developer"];
+    const SKILLS = ["Web Developer", "UI/UX Designer", "Programmer", "GUI Developer"];
     const [skill, setSkill] = useState(SKILLS[0]);
     useEffect(() =>{typeAnim(skill, setSkill, SKILLS, count, index, current, letter)},[])
   return (
