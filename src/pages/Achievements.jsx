@@ -33,7 +33,7 @@ const Card = props =>{
 const Achievements = () => {
   const ACHIEVEMENTS = [
     {
-        "id": 0,
+        "id": 9,
         "event": "Magic2.0[Hackathon]",
         "date": "Dec 2022",
         "prize": "First Prize",
@@ -42,7 +42,16 @@ const Achievements = () => {
         "details": "Magic2.0 is an overnight flagship event of IEEE SB | MEC."
     },
     {
-        "id": 1,
+        "id": 8,
+        "event": "Chakravyuha[Hackathon]",
+        "date": "Oct 2023",
+        "prize": "Finalist",
+        "by": "IEEE NSSCE",
+        "img": "../../assets/achievements/chakravyuha.jpg" ,
+        "details": "Chakravyuha, a 24 hour National Level Hackathon."
+    },
+    {
+        "id": 7,
         "event": "MaveliGPT",
         "date": "Oct 2023",
         "prize": "First Prize",
@@ -51,7 +60,7 @@ const Achievements = () => {
         "details": "MaveliGPT is a chatbot making competition conducted by TinkerHub Toc H"
     },
     {
-        "id": 2,
+        "id": 6,
         "event": "Web Wiz",
         "date": "Apr 2023",
         "prize": "First Prize",
@@ -60,7 +69,7 @@ const Achievements = () => {
         "details": "Web Wiz is a portfolio website competition organized by IEEE computer society | GECT."
     },
     {
-        "id": 3,
+        "id": 5,
         "event": "Creaza",
         "date": "May 2023",
         "prize": "First Prize",
@@ -78,7 +87,7 @@ const Achievements = () => {
         "details": "Code onam is coding contest conducted by TLE MEC was held around Onam."
     },
     {
-        "id": 5,
+        "id": 3,
         "event": "Code Onam | Intermediate",
         "date": "Oct 2023",
         "prize": "Third Prize",
@@ -87,7 +96,7 @@ const Achievements = () => {
         "details": "Code onam is coding contest conducted by TLE MEC was held around Onam."
     },
     {
-        "id": 6,
+        "id": 2,
         "event": "4x120",
         "date": "Mar 2023",
         "prize": "Third Prize",
@@ -96,7 +105,7 @@ const Achievements = () => {
         "details": "4x120 is group coding contest conducted as a part of Excel, the techno-managerial festival of MEC."
     },
     {
-        "id": 7,
+        "id": 1,
         "event": "Ozone",
         "date": "Feb 2023",
         "prize": "Winner",
@@ -105,7 +114,7 @@ const Achievements = () => {
         "details": "Ozone pair coding contest organized by TLE MEC was held around Valentine's Day."
     },
     {
-        "id": 8,
+        "id": 0,
         "event": "Mavelikk oru Portfolio",
         "date": "Oct 2023",
         "prize": "Third Prize",

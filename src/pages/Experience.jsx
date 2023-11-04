@@ -31,28 +31,42 @@ const Experience = () => {
   ];
   const hackExp = [
     {
-        "id": 0,
+        "id": 6,
+        "desig": "Chakravyuha",
+        "date": " Oct 2023",
+        "company": "IEEE NSSCE",
+        "content": "Worked on a real-time Indian Sign Language interpreter with machine learning."
+    },
+    {
+        "id": 5,
+        "desig": "Code Relay 2.0",
+        "date": " July 2023",
+        "company": "IIT Bhubaneswar",
+        "content": "Worked on a book recommeder system based on machine learning."
+    },
+    {
+        "id": 4,
         "desig": "SlashKey",
         "date": "May 2023",
         "company": "IEEE CUSAT | INTEL",
         "content": "Worked on a music recommeder website based on machine learning."
     },
     {
-        "id": 1,
+        "id": 3,
         "desig": "Devjam",
         "date": "May 2023",
         "company": "Devfolio",
         "content": "Worked on a web based project(ChatSecure) which uses machine learning and NLP to classify spam messages."
     },
     {
-        "id": 2,
+        "id": 1,
         "desig": "Technohack",
         "date": "Mar 2023",
         "company": "IEDC MEC",
         "content": "Worked on a web based project(Untangled) designed to help individuals who may be experiencing depression or other related mental health concerns."
     },
     {
-        "id": 3,
+        "id": 0,
         "desig": "Magic2.0",
         "date": "Dec 2022",
         "company": "IEEE SB | MEC",
@@ -61,14 +75,14 @@ const Experience = () => {
   ];
   const posExp = [
     {
-        "id": 0,
+        "id": 4,
         "desig": "Tech Team Core Member",
         "date": "May 2023 - [present]",
         "company": "FOSS MEC",
         "content": ""
     },
     {
-        "id": 1,
+        "id": 3,
         "desig": "Design Team Core Member",
         "date": "May 2023 - [present]",
         "company": "FOSS MEC",
@@ -82,14 +96,14 @@ const Experience = () => {
         "content": ""
     },
     {
-        "id": 3,
+        "id": 1,
         "desig": "Tech Trainee",
         "date": "May 2023 - [present]",
         "company": "TinkerHub MEC",
         "content": ""
     },
     {
-        "id": 4,
+        "id": 0,
         "desig": "Design Team Member",
         "date": "Apr 2023 - [present]",
         "company": "The Book Thieves MEC",
