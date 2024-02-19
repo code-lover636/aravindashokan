@@ -75,6 +75,13 @@ const Experience = () => {
   ];
   const posExp = [
     {
+        "id": 5,
+        "desig": "Tech Team Member",
+        "date": "Oct 2023 - [present]",
+        "company": "TEDxMEC",
+        "content": ""
+    },
+    {
         "id": 4,
         "desig": "Tech Team Core Member",
         "date": "May 2023 - [present]",
