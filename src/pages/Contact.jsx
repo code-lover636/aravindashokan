@@ -70,7 +70,7 @@ const Contact = () => {
                         </svg>
                     </a>
                 </li>
-                <li><a target="_blank" href="https://www.facebook.com/">
+                <li><a target="_blank" href="https://www.facebook.com/people/Aravind-Ashokan/pfbid02rFg6ZFadUfbDXtzF1wjWEU9abr6VztT6N8PWtsAbe59Jqd7XsGcugdH3cZkTADCul/">
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M20 10C20 4.47563 15.5206 0 10 0C4.47563 0 0 4.47563 0 10C0 14.99 3.65562 19.1275 8.4375 19.8769V12.8912H5.89813V10.0006H8.4375V7.79625C8.4375 5.29063 9.92813 3.90687 12.2131 3.90687C13.3075 3.90687 14.4531 4.10188 14.4531 4.10188V6.5625H13.19C11.95 6.5625 11.5625 7.33437 11.5625 8.125V10H14.3356L13.89 12.8906H11.5625V19.8762C16.3406 19.1269 20 14.9894 20 9.99937V10Z" fill="white"/>
                         </svg>

@@ -33,13 +33,22 @@ const Card = props =>{
 const Achievements = () => {
   const ACHIEVEMENTS = [
     {
-        "id": 9,
+        "id": 10,
         "event": "Magic2.0[Hackathon]",
         "date": "Dec 2022",
         "prize": "First Prize",
         "by": "IEEE SB MEC",
         "img": "../../assets/achievements/magic.png" ,
         "details": "Magic2.0 is an overnight flagship event of IEEE SB | MEC."
+    },
+    {
+        "id": 9,
+        "event": "Portfolio Design",
+        "date": "Nov 2023",
+        "prize": "First Prize",
+        "by": "DSC MEC",
+        "img": "../../assets/achievements/gdsc.png" ,
+        "details": "Portfolio design competition organized by  Google Developer Student Club | MEC."
     },
     {
         "id": 8,
@@ -122,40 +131,40 @@ const Achievements = () => {
         "img": "../../assets/achievements/gtech.jpeg" ,
         "details": "'Mavelikk oru Portfolio' is a UI/UX portfolio making competion conducted by Gtech mulearn."
     },
-  ];
-  return (
-    <section className="achievements" id="achievements">
-        <Swiper
-            className='swiper'
-            effect={"coverflow"}
-            grabCursor={true}
-            centeredSlides={true}
-            slidesPerView={"auto"}
-            coverflowEffect={{
-              rotate: 50,
-              stretch: 0,
-              depth: 100,
-              modifier: 1,
-              slideShadows: true,
-            }}
-            modules={[EffectCoverflow, Navigation, Pagination]}
-            navigation
-            pagination={{ clickable: true }}
-        >
-        {ACHIEVEMENTS.map( item =>
-            <SwiperSlide key={item['id']}>
-                <Card img={item['img']}
-                      date={item['date']}
-                      prize={item['prize']}
-                      event={item['event']}
-                      by={item['by']}
-                      details={item['details']}
-                      />
-            </SwiperSlide>
-        )}
-        </Swiper>
-    </section>
-  )
+    ];
+    return (
+        <section className="achievements" id="achievements">
+            <Swiper
+                className='swiper'
+                effect={"coverflow"}
+                grabCursor={true}
+                centeredSlides={true}
+                slidesPerView={"auto"}
+                coverflowEffect={{
+                    rotate: 50,
+                    stretch: 0,
+                    depth: 100,
+                    modifier: 1,
+                    slideShadows: true,
+                }}
+                modules={[EffectCoverflow, Navigation, Pagination]}
+                navigation
+                pagination={{ clickable: true }}
+            >
+            {ACHIEVEMENTS.map( item =>
+                <SwiperSlide key={item['id']}>
+                    <Card img={item['img']}
+                        date={item['date']}
+                        prize={item['prize']}
+                        event={item['event']}
+                        by={item['by']}
+                        details={item['details']}
+                        />
+                </SwiperSlide>
+            )}
+            </Swiper>
+        </section>
+    );
 }
 
 export default Achievements
