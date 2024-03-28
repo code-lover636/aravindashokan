@@ -50,10 +50,18 @@ export default function Work() {
 
   const PROJECTS = [
     { 
+      "name": "VISION",
+      "desc": "Color Correction Software",
+      "image": "../../assets/projects/chatsecure.png",
+      "tools": ["Python", "Javascript", "CSS","Python", "Fast API", "Machine Learning and NLP"],
+      "hosted": "https://chatsecure.netlify.app",
+      "code": "https://github.com/code-lover636/ChatSecure"
+    },
+    { 
       "name": "CHATSECURE",
       "desc": "Spam classifier",
       "image": "../../assets/projects/chatsecure.png",
-      "tools": ["React", "Vite", "Sass","Python", "Fast API", "Machine Learning and NLP"],
+      "tools": ["React", "Vite", "CSS(SASS)","Python", "Fast API", "Machine Learning and NLP"],
       "hosted": "https://chatsecure.netlify.app",
       "code": "https://github.com/code-lover636/ChatSecure"
     },
@@ -69,7 +77,7 @@ export default function Work() {
       "name": "GRANGER",
       "desc": "Bard Powered AI Chatbot",
       "image": "../../assets/projects/granger.png",
-      "tools": ["React", "Vite","Sass", "Python", "Fast API", "Bard API"],
+      "tools": ["React", "Vite","CSS(SASS)", "Python", "Fast API", "Bard API"],
       "hosted": "",
       "code": "https://github.com/code-lover636/Granger"
     },
@@ -77,7 +85,7 @@ export default function Work() {
       "name": "Musical",
       "desc": "Spotify Clone",
       "image": "../../assets/projects/musical.png",
-      "tools": ["React","Sass", "Shazam Core API"],
+      "tools": ["React","CSS(SASS)", "Shazam Core API"],
       "hosted": "https://musical-music-app.netlify.app/",
       "code": "https://github.com/code-lover636/Musical"
     },
@@ -85,7 +93,7 @@ export default function Work() {
       "name": "NEWSIFY",
       "desc": "NEWS browsing app.",
       "image": "../../assets/projects/newsify.png",
-      "tools": ["Flask","Jinja","News API", "HTML", "SASS"],
+      "tools": ["Flask","Jinja","News API", "HTML", "CSS(SASS)"],
       "hosted": "http://programmer636.pythonanywhere.com/",
       "code": "https://github.com/code-lover636/NEWSIFY-NewsApp-API_Based"
     },
@@ -93,7 +101,7 @@ export default function Work() {
       "name": "PIXEL",
       "desc": "Image browsing app.",
       "image": "../../assets/projects/pixel.png",
-      "tools": ["React","Sass","Unsplash API"],
+      "tools": ["React","CSS(SASS)","Unsplash API"],
       "hosted": "https://pixel-image.netlify.app/",
       "code": "https://github.com/code-lover636/Pixel"
       
@@ -102,7 +110,7 @@ export default function Work() {
       "name": "STREAMFLIX",
       "desc": "Netflix clone",
       "image": "../../assets/projects/streamflix.png",
-      "tools": ["React","Sass","OMDB API"],
+      "tools": ["React","CSS(SASS)","OMDB API"],
       "hosted": "https://code-lover636.github.io/StreamFlix/",
       "code": "https://github.com/code-lover636/StreamFlix"
     },
