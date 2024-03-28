@@ -52,10 +52,10 @@ export default function Work() {
     { 
       "name": "VISION",
       "desc": "Color Correction Software",
-      "image": "../../assets/projects/chatsecure.png",
-      "tools": ["Python", "Javascript", "CSS","Python", "Fast API", "Machine Learning and NLP"],
-      "hosted": "https://chatsecure.netlify.app",
-      "code": "https://github.com/code-lover636/ChatSecure"
+      "image": "../../assets/projects/hft.png",
+      "tools": ["Python", "Javascript", "HTML", "CSS", "Fast API", "Machine Learning", "Numpy"],
+      "hosted": "",
+      "code": "https://github.com/code-lover636/Vision"
     },
     { 
       "name": "CHATSECURE",
@@ -74,14 +74,6 @@ export default function Work() {
       "code": "https://github.com/code-lover636/Signal_Sign_Language_Interpreter"
     },
     { 
-      "name": "GRANGER",
-      "desc": "Bard Powered AI Chatbot",
-      "image": "../../assets/projects/granger.png",
-      "tools": ["React", "Vite","CSS(SASS)", "Python", "Fast API", "Bard API"],
-      "hosted": "",
-      "code": "https://github.com/code-lover636/Granger"
-    },
-    { 
       "name": "Musical",
       "desc": "Spotify Clone",
       "image": "../../assets/projects/musical.png",
@@ -94,7 +86,7 @@ export default function Work() {
       "desc": "NEWS browsing app.",
       "image": "../../assets/projects/newsify.png",
       "tools": ["Flask","Jinja","News API", "HTML", "CSS(SASS)"],
-      "hosted": "http://programmer636.pythonanywhere.com/",
+      "hosted": "https://newsify-uixw.onrender.com/",
       "code": "https://github.com/code-lover636/NEWSIFY-NewsApp-API_Based"
     },
     { 
