@@ -33,7 +33,16 @@ const Card = props =>{
 const Achievements = () => {
   const ACHIEVEMENTS = [
     {
-        "id": 10,
+        "id": 12,
+        "event": "Hack For Tomorrow",
+        "date": "Feb 2024",
+        "prize": "First Prize",
+        "by": "EXCEL MEC",
+        "img": "../../assets/achievements/hft.jpeg" ,
+        "details": "HFT is held as part of EXCEL, the techno-managerial fest of MEC."
+    },
+    {
+        "id": 11,
         "event": "Magic2.0[Hackathon]",
         "date": "Dec 2022",
         "prize": "First Prize",
@@ -42,22 +51,31 @@ const Achievements = () => {
         "details": "Magic2.0 is an overnight flagship event of IEEE SB | MEC."
     },
     {
+        "id": 10,
+        "event": "Binary Baton",
+        "date": "March 2024",
+        "prize": "First Prize",
+        "by": "EXCEL MEC",
+        "img": "../../assets/achievements/binarybaton.jpeg" ,
+        "details": "Binary Baton is team coding contest conducted as a part of Excel, the techno-managerial festival of MEC."
+    },
+    {
         "id": 9,
+        "event": "Reverse Coding",
+        "date": "March 2024",
+        "prize": "First Prize",
+        "by": "EXCEL MEC",
+        "img": "../../assets/achievements/revcoding.jpeg" ,
+        "details": "Reverse Coding is team coding contest conducted as a part of Excel, the techno-managerial festival of MEC."
+    },
+    {
+        "id": 8,
         "event": "Portfolio Design",
         "date": "Nov 2023",
         "prize": "First Prize",
         "by": "DSC MEC",
         "img": "../../assets/achievements/gdsc.png" ,
         "details": "Portfolio design competition organized by  Google Developer Student Club | MEC."
-    },
-    {
-        "id": 8,
-        "event": "Chakravyuha[Hackathon]",
-        "date": "Oct 2023",
-        "prize": "Finalist",
-        "by": "IEEE NSSCE",
-        "img": "../../assets/achievements/chakravyuha.jpg" ,
-        "details": "Chakravyuha, a 24 hour National Level Hackathon."
     },
     {
         "id": 7,
@@ -111,7 +129,7 @@ const Achievements = () => {
         "prize": "Third Prize",
         "by": "Excel MEC",
         "img": "../../assets/achievements/4x120.png" ,
-        "details": "4x120 is group coding contest conducted as a part of Excel, the techno-managerial festival of MEC."
+        "details": "4x120 is team coding contest conducted as a part of Excel, the techno-managerial festival of MEC."
     },
     {
         "id": 1,
