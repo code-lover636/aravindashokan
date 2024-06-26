@@ -44,26 +44,26 @@ const About = () => {
                 transition={{duration: 1}}
                 >
                 <div className="code">
-                    <span className="blue">import</span> about <span className="blue">from</span> "life.js";
+                    <span className="blue">import</span> about <span className="blue">from</span> &quot; life.js &quot;
                     <br /> <br />
-                    <span className="blue">var</span> NAME = <span className="brown">"Aravind Ashokan"</span>; <br />
-                    <span className="blue">var</span> EMAIL_ID = <span className="brown">"aravindashokan636@gmail.com"</span>; <br />
-                    <span className="blue">var</span> EDUCATION = <span className="brown">"Computer Science Engineering"</span>; <br />
-                    <span className="blue">var</span> LAST_WORKED = <span className="brown">"UI/UX design intern at Madhyam Change Foundation"</span>; <br />
+                    <span className="blue">var</span> NAME = <span className="brown"> &quot;Aravind Ashokan &quot;</span>; <br />
+                    <span className="blue">var</span> EMAIL_ID = <span className="brown"> &quot;aravindashokan636@gmail.com &quot;</span>; <br />
+                    <span className="blue">var</span> EDUCATION = <span className="brown"> &quot;Computer Science Engineering &quot;</span>; <br />
+                    <span className="blue">var</span> LAST_WORKED = <span className="brown"> &quot;Freelance Developer at EthicVal&quot;</span>; <br />
                     <span className="blue">var</span> SKILLS =<span className="blue">{"{"}</span>
-                    <span className="brown">"Programming"</span>, 
-                    <span className="brown"> "Web Development"</span>,  
-                    <span className="brown"> "UI/UX Design"</span>,
-                    <span className="brown"> "Machine Learning"</span>
+                    <span className="brown"> &quot;Programming &quot;</span>, 
+                    <span className="brown">  &quot;Web Development &quot;</span>,  
+                    <span className="brown">  &quot;UI/UX Design &quot;</span>,
+                    <span className="brown">  &quot;Machine Learning &quot;</span>
                     <span className="blue">{"}"}</span>;
                     <br /> <br />
                     <span className="green">console</span><span className="yellow">.log</span>{"("}
-                    <span className="brown">"
+                    <span className="brown"> &quot;
                         {"As a driven and inquisitive programmer, I am currently focused on learning full-stack web development."} 
                         {"My passion lies in creating websites, web applications, and exploring the potential of web scraping and APIs."}
                         {"I remain committed to keeping up with the latest technologies and industry best practices,"} 
                         {"and I am eager to expand my skill set through continued learning."}
-                        "
+                        &quot;
                     </span>
                     {");"}
                 </div>

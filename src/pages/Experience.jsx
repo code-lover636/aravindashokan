@@ -22,6 +22,13 @@ const Experience = () => {
   const hac = useRef(0), int = useRef(1), pos = useRef(2);
   const internExp = [
     {
+        "id": 2,
+        "desig": "Freelance Developer",
+        "date": "Apr 2024 - present",
+        "company": "EthicVal",
+        "content": "Worked as a freelance developer for EthicVal, collaborating with MEDICO | medical career partner"
+    },
+    {
         "id": 1,
         "desig": "Freelance Designer",
         "date": "Feb-Apr 2024",

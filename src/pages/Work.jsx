@@ -51,19 +51,19 @@ export default function Work() {
   const PROJECTS = [
     { 
       "name": "VISION",
-      "desc": "Color Correction Software",
+      "desc": "Color correction software to aid color blind people",
       "image": "../../assets/projects/hft.png",
       "tools": ["Python", "Javascript", "HTML", "CSS", "Fast API", "Machine Learning", "Numpy"],
       "hosted": "",
       "code": "https://github.com/code-lover636/Vision"
     },
     { 
-      "name": "CHATSECURE",
-      "desc": "Spam classifier",
-      "image": "../../assets/projects/chatsecure.png",
-      "tools": ["React", "Vite", "CSS(SASS)","Python", "Fast API", "Machine Learning and NLP"],
-      "hosted": "https://chatsecure.netlify.app",
-      "code": "https://github.com/code-lover636/ChatSecure"
+      "name": "STREAMFLIX",
+      "desc": "Movie/TV series info finder",
+      "image": "../../assets/projects/streamflix.png",
+      "tools": ["React","CSS(SASS)","TMDB API"],
+      "hosted": "https://streamflix636.netlify.app/",
+      "code": "https://github.com/code-lover636/StreamFlix"
     },
     { 
       "name": "SIGNAL",
@@ -97,14 +97,6 @@ export default function Work() {
       "hosted": "https://pixel-image.netlify.app/",
       "code": "https://github.com/code-lover636/Pixel"
       
-    },
-    { 
-      "name": "STREAMFLIX",
-      "desc": "Netflix clone",
-      "image": "../../assets/projects/streamflix.png",
-      "tools": ["React","CSS(SASS)","OMDB API"],
-      "hosted": "https://code-lover636.github.io/StreamFlix/",
-      "code": "https://github.com/code-lover636/StreamFlix"
     },
   ];
 
