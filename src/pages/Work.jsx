@@ -12,8 +12,6 @@ import "../styles/work.scss";
 
 
 const Slider = props =>{
-  const hosted = props.hosted;
-  const code = props.code;
   return(
   <div className="container">
     <img src={props.image} alt={props.name} />
@@ -80,6 +78,14 @@ export default function Work() {
       "tools": ["React","CSS(SASS)", "Shazam Core API"],
       "hosted": "https://musical-music-app.netlify.app/",
       "code": "https://github.com/code-lover636/Musical"
+    },
+    { 
+      "name": "Tastes",
+      "desc": "Food Recipe web app",
+      "image": "../../assets/projects/tastes.png",
+      "tools": ["React","CSS(SASS)","Spoonacular API"],
+      "hosted": "https://tastes-recipe.netlify.app/",
+      "code": "https://github.com/code-lover636/TASTES-FoodRecipeApp-API_Based"
     },
     { 
       "name": "NEWSIFY",
