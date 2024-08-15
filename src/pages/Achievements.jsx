@@ -1,6 +1,5 @@
-import React from 'react'
 import {Swiper, SwiperSlide} from'swiper/react'
-import { EffectCoverflow, Pagination, Navigation, Scrollbar, A11y, Mousewheel } from 'swiper'
+import { EffectCoverflow, Pagination, Navigation} from 'swiper'
 
 import 'swiper/css/pagination';
 import 'swiper/css'
@@ -33,7 +32,7 @@ const Card = props =>{
 const Achievements = () => {
   const ACHIEVEMENTS = [
     {
-        "id": 12,
+        "id": 13,
         "event": "Hack For Tomorrow",
         "date": "Feb 2024",
         "prize": "First Prize",
@@ -42,13 +41,22 @@ const Achievements = () => {
         "details": "HFT is held as part of EXCEL, the techno-managerial fest of MEC."
     },
     {
-        "id": 11,
+        "id": 12,
         "event": "Magic2.0[Hackathon]",
         "date": "Dec 2022",
         "prize": "First Prize",
         "by": "IEEE SB MEC",
         "img": "../../assets/achievements/magic.png" ,
         "details": "Magic2.0 is an overnight flagship event of IEEE SB | MEC."
+    },
+    {
+        "id": 11,
+        "event": "Elever 4.0 | Task 2",
+        "date": "Aug 2024",
+        "prize": "Second Prize",
+        "by": "IEEE CSKS",
+        "img": "../../assets/achievements/elever.jpeg" ,
+        "details": "Elever is conducted by IEEE Computer Society, Kerala Chapter"
     },
     {
         "id": 10,

@@ -34,7 +34,7 @@ const Navbar = ({activeSection}) => {
             animate="visible"
             transition={{
                 default: { duration: 2, ease: "easeInOut" },
-                fill: { duration: 2, ease: [1, 0, 0.8, 1] }
+                fill: { duration: 2, ease: [1, 0, 0.8, 1] },
               }}
           />
         <motion.path
@@ -59,7 +59,7 @@ const Navbar = ({activeSection}) => {
             strokeWidth="2"
             transition={{
                 default: { duration: 2, ease: "easeInOut" },
-                fill: { duration: 2, ease: [1, 0, 0.8, 1] }
+                fill: { duration: 2, ease: [1, 0, 0.8, 1] },
               }}
           />
           </svg>

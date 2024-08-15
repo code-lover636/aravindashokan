@@ -20,7 +20,7 @@ const Home = () => {
     let index = 0;
     let current = '';
     let letter = '';
-    const SKILLS = ["Programmer", "Web Developer", "UI/UX Designer", "GUI Developer", "Freelancer"];
+    const SKILLS = ["Programmer", "Web Developer", "UI/UX Designer", "Freelancer"];
     const [skill, setSkill] = useState(SKILLS[0]);
     useEffect(() =>{typeAnim(skill, setSkill, SKILLS, count, index, current, letter)},[])
   return (
@@ -35,7 +35,7 @@ const Home = () => {
             </p> 
             <div className="buttons">
                 <a href="#contact" className="hire">Hire Me</a>
-                <a target="_blank" href="https://drive.google.com/file/d/1xv9udE7q-QYDSEjCaQKmyOlffEvuRX5R/view?usp=sharing" className="resume">My Resume</a>
+                <a target="_blank" href="https://drive.google.com/file/d/1xv9udE7q-QYDSEjCaQKmyOlffEvuRX5R/view?usp=sharing" rel="noreferrer" className="resume">My Resume</a>
             </div>         
         </div>
 
