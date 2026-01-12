@@ -20,7 +20,7 @@ const Home = () => {
     let index = 0;
     let current = '';
     let letter = '';
-    const SKILLS = ["Programmer", "Web Developer", "UI/UX Designer", "Freelancer"];
+    const SKILLS = ["Software Engineer", "Web Developer", "UI/UX Designer"];
     const [skill, setSkill] = useState(SKILLS[0]);
     useEffect(() =>{typeAnim(skill, setSkill, SKILLS, count, index, current, letter)},[])
   return (
@@ -30,11 +30,10 @@ const Home = () => {
         <div className="photo-container"></div>
         <div className="subtext">
             <h1 className="iam">I'm a <span className="typing">{skill}</span></h1>
-            <p className="desc">A programmer, web developer and designer with a knack for designing engaging and responsive user experiences that drive results.
-                Get to know me and my work better by exploring my portfolio website.
+            <p className="desc">A software engineer focused on problem-solving and delivering measurable results. Explore my portfolio to learn more about my work and impact.
             </p> 
             <div className="buttons">
-                <a href="#contact" className="hire">Hire Me</a>
+                <a href="#contact" className="hire">Contact Me</a>
                 <a target="_blank" href="https://drive.google.com/file/d/1xv9udE7q-QYDSEjCaQKmyOlffEvuRX5R/view?usp=sharing" rel="noreferrer" className="resume">My Resume</a>
             </div>         
         </div>

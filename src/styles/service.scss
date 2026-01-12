@@ -64,14 +64,14 @@
             place-items: center;
             justify-content: space-evenly;
             .box{
-                width: 7em;
-                height: 7em;
+                width: 6em;
+                height: 6em;
                 svg{
                     width: 30px;
                     height: 30px;
                 }
                 h1{
-                    font-size: 1.1rem;
+                    font-size: 1rem;
                     color: $half-white;
                 }
             }

@@ -32,8 +32,8 @@ const Card = props =>{
 const Achievements = () => {
   const ACHIEVEMENTS = [
     {
-        "id": 13,
-        "event": "Hack For Tomorrow",
+        "id": 14,
+        "event": "HFT Hackathon",
         "date": "Feb 2024",
         "prize": "First Prize",
         "by": "EXCEL MEC",
@@ -41,8 +41,8 @@ const Achievements = () => {
         "details": "HFT is held as part of EXCEL, the techno-managerial fest of MEC."
     },
     {
-        "id": 12,
-        "event": "Magic2.0[Hackathon]",
+        "id": 13,
+        "event": "Magic2.0 Hackathon",
         "date": "Dec 2022",
         "prize": "First Prize",
         "by": "IEEE SB MEC",
@@ -50,8 +50,17 @@ const Achievements = () => {
         "details": "Magic2.0 is an overnight flagship event of IEEE SB | MEC."
     },
     {
+        "id": 12,
+        "event": "Leetcode Challenge",
+        "date": "Jun 2025",
+        "prize": "Second Prize",
+        "by": "IEEE CSKS",
+        "img": "../../assets/achievements/leetcode.png" ,
+        "details": "Leetcode Challenge is a week long coding contest conducted by  IEEE CSKS"
+    },
+    {
         "id": 11,
-        "event": "Elever 4.0 | Task 2",
+        "event": "Elever 4.0",
         "date": "Aug 2024",
         "prize": "Second Prize",
         "by": "IEEE CSKS",
@@ -61,7 +70,7 @@ const Achievements = () => {
     {
         "id": 10,
         "event": "Binary Baton",
-        "date": "March 2024",
+        "date": "Mar 2024",
         "prize": "First Prize",
         "by": "EXCEL MEC",
         "img": "../../assets/achievements/binarybaton.jpeg" ,
@@ -70,7 +79,7 @@ const Achievements = () => {
     {
         "id": 9,
         "event": "Reverse Coding",
-        "date": "March 2024",
+        "date": "Mar 2024",
         "prize": "First Prize",
         "by": "EXCEL MEC",
         "img": "../../assets/achievements/revcoding.jpeg" ,

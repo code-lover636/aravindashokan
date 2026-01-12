@@ -49,9 +49,8 @@ const About = () => {
                     <span className="blue">var</span> NAME = <span className="brown"> &quot;Aravind Ashokan &quot;</span>; <br />
                     <span className="blue">var</span> EMAIL_ID = <span className="brown"> &quot;aravindashokan636@gmail.com &quot;</span>; <br />
                     <span className="blue">var</span> EDUCATION = <span className="brown"> &quot;Computer Science and Engineering &quot;</span>; <br />
-                    <span className="blue">var</span> LAST_WORKED = <span className="brown"> &quot;Freelance Developer at EthicVal&quot;</span>; <br />
+                    <span className="blue">var</span> WORKING_AT = <span className="brown"> &quot;Armada.ai&quot;</span>; <br />
                     <span className="blue">var</span> SKILLS =<span className="blue">{"{"}</span>
-                    <span className="brown"> &quot;Programming &quot;</span>, 
                     <span className="brown">  &quot;Web Development &quot;</span>,  
                     <span className="brown">  &quot;UI/UX Design &quot;</span>,
                     <span className="brown">  &quot;Machine Learning &quot;</span>
@@ -59,10 +58,8 @@ const About = () => {
                     <br /> <br />
                     <span className="green">console</span><span className="yellow">.log</span>{"("}
                     <span className="brown"> &quot;
-                        {"I am a Computer Science and Engineering student with knowledge in software development, web technologies, and machine learning."}
-                        {" Proficient in a diverse range of programming languages and frameworks, including Python, Java, JavaScript, React, and more."}
-                        {" Demonstrated success in designing, developing, and deploying scalable software solutions through freelance projects, internships, and collaborative efforts in fast-paced environments."}
-                        {" Committed to continuous learning and innovation, with a strong aspiration to contribute to high-impact projects at a leading tech company."}
+                    I am a software engineer with a strong focus on problem-solving and building reliable, scalable solutions. I work across modern web and software technologies to translate complex requirements into clean, maintainable systems. Driven by impact, I value clarity in design, efficiency in execution, and continuous improvement in both code and process.
+
                         &quot;
                     </span>
                     {");"}

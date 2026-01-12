@@ -6,7 +6,7 @@
     justify-content: space-evenly;
     align-items: center;
     padding-top: 1em;
-    padding-bottom: 4em;
+    padding-bottom: 1em;
     .hi{
         font-family: $primary-font;
         font-weight: 500;
@@ -28,8 +28,8 @@
         min-width: 220px;
         height: 250px;
         border: 12px solid $grad-bg;
-        background-image: url("../assets/homephoto.png");
-        background-position: center center;
+        background-image: url("../assets/DP.jpg");
+        background-position: top center;
         background-size: cover;
         border-radius: 50%;
         box-shadow: $photo-shadow;
@@ -46,7 +46,7 @@
         .iam{
             font-family: $primary-font;
             font-weight: 500;
-            font-size: 1.6rem;
+            font-size: 1.3rem;
             line-height: 38px;
             color: $primary-color;
             align-self: flex-start;
@@ -88,8 +88,8 @@
                 padding: .3em 1.5em;
                 font-family: $primary-font;
                 transition: all .5s linear;
-                font-weight: 700;
-                font-size: 1rem;
+                font-weight: 500;
+                font-size: 0.85rem;
                 text-align: center;
                 text-decoration: none;
                 border-radius: 5px;
@@ -100,10 +100,19 @@
                     transition: padding .3s ease-in-out;
                 }
             }
+            .hire {
+                background-color: $primary-color;
+                color: $nav-bg;
+                &:hover{
+                    background-color: $nav-bg;
+                    color: $primary-color;
+                    transition: padding .3s ease-in-out;
+                }
+            }
         }
     }
     .scroll{
-        display: flex;
+        display: none;
         justify-content: space-between;
         align-items: center;
         position: absolute;
@@ -194,6 +203,7 @@
 
         .scroll{
             right: 1em;
+            display: flex;
         }
     }
 }
