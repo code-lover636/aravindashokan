@@ -48,6 +48,14 @@ export default function Work() {
 
   const PROJECTS = [
     { 
+      "name": "TICKET",
+      "desc": "Full Stack Ticket Booking Application",
+      "image": "../../assets/projects/ticket.png",
+      "tools": ["Next", "Supabase", "Redis", "Clerk", "Razor Pay", "ImageKitio", "Tailwind CSS"],
+      "hosted": "https://ticketsss.vercel.app/",
+      "code": "https://github.com/code-lover636/Ticket"
+    },
+    { 
       "name": "VISION",
       "desc": "Color correction software to aid color blind people",
       "image": "../../assets/projects/hft.png",
@@ -70,14 +78,6 @@ export default function Work() {
       "tools": ["Machine Learning", "OpenCV", "Mediapipe", "Streamlit"],
       "hosted": "",
       "code": "https://github.com/code-lover636/Signal_Sign_Language_Interpreter"
-    },
-    { 
-      "name": "Musical",
-      "desc": "Spotify Clone",
-      "image": "../../assets/projects/musical.png",
-      "tools": ["React","CSS(SASS)", "Shazam Core API"],
-      "hosted": "https://musical-music-app.netlify.app/",
-      "code": "https://github.com/code-lover636/Musical"
     },
     { 
       "name": "Tastes",

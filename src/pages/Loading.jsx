@@ -1,5 +1,5 @@
-import React,{useEffect} from 'react'
-import { useAnimate, stagger } from "framer-motion"
+import {useEffect} from 'react'
+import { useAnimate} from "framer-motion"
 import '../styles/loading.scss'
 
 const Loading = () => {

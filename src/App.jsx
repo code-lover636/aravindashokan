@@ -36,7 +36,7 @@ function App() {
 
   return (
     <>
-      {/* <Loading /> */}
+      <Loading />
       <Navbar activeSection={activeSection} />
       <Home className="sections" id="home-s"/>
       <About className="sections" id="about-s"/>

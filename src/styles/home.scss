@@ -6,7 +6,7 @@
     justify-content: space-evenly;
     align-items: center;
     padding-top: 1em;
-    padding-bottom: 1em;
+    padding-bottom: 3em;
     .hi{
         font-family: $primary-font;
         font-weight: 500;
@@ -75,13 +75,14 @@
     
         }
         .buttons{
+            width: 100%;
             display: flex;
-            justify-content: flex-start;
-            align-items: flex-start;
+            justify-content: space-between;
+            align-items: center;
             gap: 1.25em;
             height: auto;
             align-self: flex-start;
-            margin-top: 2em;
+            margin-top: 1em;
             .hire, .resume{
                 background-color: $nav-bg;
                 color: $primary-color;
@@ -192,6 +193,7 @@
             .buttons{
                 margin: 0;
                 margin-top: 2em;
+                justify-content: flex-start;
                 .hire, .resume{
                     font-size: 1rem;
                     font-weight: 500;
